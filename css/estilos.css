@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -38,6 +41,53 @@ body {
     
 }
 
+/* Parte1 */
+
+
+
+.contenido-principal {
+    max-width: 50%;
+    padding-top: 120px;
+}
+
+.contenido-principal h2 {
+    font-size: 177px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contenido-principal p {
+    font-size: 40px;
+    font-weight:normal;
+    margin-bottom: 20px;
+}
+
+.boton-ordenar {
+    padding: 10px 20px;
+    background-color: #21243C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 45px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* Sección principal */
+.seccion-principal {
+    display: flex;
+    height: 1000px;
+    justify-content: space-between;
+    padding: 35px;
+    background-color: #fff;
+    background-image: url(/Elementos/Parte1/_1_orig.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+
+/* Parte1 */
 
 
 .navegacion{
@@ -94,45 +144,13 @@ body {
     font-size: 20px;
 }
 
-/* Sección principal */
-.seccion-principal {
-    display: flex;
-    height: 900px;
-    justify-content: space-between;
-    padding: 40px;
-    background-color: #fff;
-    background-image: url(/img/fondo_sushi.png);
-    background-size: cover;
-    color: #ffffff;
-}
+
 .imagen-principal img {
     max-width: 100%;
     border-radius: 10px;
 }
 
 
-.contenido-principal {
-    max-width: 50%;
-}
-
-.contenido-principal h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.contenido-principal p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.boton-ordenar {
-    padding: 10px 20px;
-    background-color: #ff4136;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-}
 
 
 /* Sección de menú popular */
