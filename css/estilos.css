@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -136,40 +136,86 @@ body {
 
 
 /* Sección de menú popular */
-.menu-popular {
+.contenedor__menu {
     height: 900px;
     background-color: #21243d;
     color: #ffffff;
     text-align: center;
     padding: 40px 0;
+    position: relative;
 }
 
-.menu-popular h2 {
-    margin-bottom: 40px;
-    font-size: 36px;
+.menu__img_circulo-superior-derecho{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    
+    
 }
+
+.menu__img_puntos-superior-izquierda{
+    position: absolute;
+    left: 440px;
+    top: 20px;
+}
+.menu__img_w-superior-izquierda{
+    position: absolute;
+    left: 200px;
+    top:200px;
+    
+}
+.menu__img_circulo-izquierdo-inferior{
+    position: absolute;
+    left: 0;
+    top: 700px;
+}
+
+.menu__img_puntos-medio-derecha{
+    position: absolute;
+    right: 0;
+    top: 400px;
+}
+
+.menu__img_w-inferior-derecha{
+    position: absolute;
+    right: 0;
+    top: 870px;
+}
+
+.menu__titulo{
+    padding-top: 30px;
+    font-size: 62px;
+
+}
+
+.menu__texto{
+    width: 660px;
+    margin: 0 auto;
+}
+
 
 .contenedor-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-top: 70px;
 }
 
 .item-menu {
-    max-width: 30%;
+    max-width: 20%;
 }
 
 .item-menu img {
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
 }
 
 .item-menu h3 {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 42px;
 }
 
 .item-menu p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* pedido */
@@ -180,8 +226,19 @@ body {
     color: #ffffff;
     text-align: center;
     padding: 40px 0;
+    position: relative;
 }
 
+.pedido__puntos-superior-derecho{
+    position: absolute;
+    right: 30px;
+}
+
+.pedido__w-centro{
+    position: absolute;
+    top: 140px;
+    right: 750px;
+}
 
 /* Sección de estadísticas */
 .estadisticas {
