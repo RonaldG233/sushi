@@ -47,43 +47,54 @@ body {
 
 .contenido-principal {
     max-width: 50%;
-    padding-top: 120px;
+    text-align: left;
+    padding: 100px;
 }
 
 .contenido-principal h2 {
-    font-size: 177px;
+    font-size: 203px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .contenido-principal p {
-    font-size: 40px;
-    font-weight:normal;
+    font-size: 50px;
+    font-weight:300;
     margin-bottom: 20px;
+
 }
 
 .boton-ordenar {
-    padding: 10px 20px;
+    margin-top: 50px;
+    padding: 30px 120px;
     background-color: #21243C;
     color: #fff;
     border: none;
     cursor: pointer;
     font-size: 45px;
     border-radius: 50px;
-    font-weight: bold;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.boton-ordenar:hover{
+    background-color: #3a3f5c;
 }
 
 /* Sección principal */
 .seccion-principal {
     display: flex;
-    height: 1000px;
+    align-items: center;
+    height: 100vh;
     justify-content: space-between;
-    padding: 35px;
-    background-color: #fff;
     background-image: url(/Elementos/Parte1/_1_orig.jpeg);
-    background-size:cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    padding: 0 50px;
     color: #ffffff;
+    overflow: hidden;
 }
 
 
@@ -235,13 +246,51 @@ body {
     text-align: center;
     padding: 40px 0;
 }
+
+/* Parte5 */
 .pedido3 {
     height: 900px;
-    background-color: #21243d;
+    background-image: url(/Elementos/Parte5/Fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #ffffff;
     text-align: center;
     padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.comentario__comensal{
+    max-width: 900px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.perfil-imagen{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.comentario__comensal-texto{
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.nombre{
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+
+/* Parte5 */
 
 .pedido4 {
     height: 900px;
