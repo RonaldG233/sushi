@@ -240,32 +240,132 @@ body {
     right: 750px;
 }
 
+.pedido__circulo-inferior-derecho{
+    position: absolute;
+    right: 0px;
+    top: 730px;
+}
+
+.pedido__puntos-inferior-izquierda{
+    position: absolute;
+    left: 30px;
+    top: 760px;
+}
+.pedido__circulo-izquierdo{
+    position: absolute;
+    left: 100px;
+    top: 160px;
+}
+
+
+.pedido__imagen-circular{
+    position: absolute;
+    z-index: 1;
+    left: 160px;
+    top: 180px;
+    width: 600px;
+}
+
+
+
+
+
+
+
+.contenido {
+    position: absolute;
+    width: 550px;
+    top: 230px;
+    right: 300px;
+    text-align: left;
+    
+  }
+.titulo {
+    font-size: 70px;
+    font-weight: bold;
+    color: #282F3F;
+  }
+  
+  .descripcion {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .boton {
+    margin-top: 35px;
+    background-color: #282F3F;
+    color: #FFF;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 34px;
+
+    transition: background-color 0.3s;
+  }
+  
+  .boton:hover {
+    background-color: #1f2633;
+  }
+
 /* Sección de estadísticas */
-.estadisticas {
+.estadisticasas {
     height: 900px;
     background-color: #21243d;
     padding: 40px 0;
     text-align: center;
 }
 
-.estadisticas h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.contenedor-estadisticas {
-    display: flex;
-    justify-content: space-around;
-}
-
-.estadistica h3 {
-    font-size: 48px;
+.titulos {
+    font-size: 28px;
+    font-weight: bold;
     margin-bottom: 10px;
-}
-
-.estadistica p {
+  }
+  
+  .descripciones {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .estadisticas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .estadistica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circulo {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .numero {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFF;
+  }
+  
+  .etiqueta {
     font-size: 18px;
-}
+    color: #FFF;
+    margin-top: 5px;
+  }
+  
+
+
+
 
 .pedido2 {
     height: 900px;
