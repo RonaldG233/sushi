@@ -315,23 +315,73 @@ body {
     background-color: #21243d;
     padding: 40px 0;
     text-align: center;
+    position: relative;
+}
+
+
+.estadisticaas__puntos-izquierda-superior{
+    position: absolute;
+    left: 150px;
+    top: 70px;
+}
+
+.estadisticaas__w-izquierda-superior{
+    position: absolute;
+    left: 160px;
+    top: 250px;
+}
+
+.estadisticaas__circulo-derecha-superior{
+    position: absolute;
+    right: 150px;
+    top: 100px;
+}
+
+.estadisticaas__circulo-inferior-izquierda{
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+}
+
+.estadisticaas__puntos-abajo-derecha{
+    position: absolute;
+    bottom: 80px;
+    right: 650px;
+}
+
+.estadisticaas__w-derecha-inferior{
+    position: absolute;
+    bottom: 130px;
+    right: 150px;
 }
 
 .titulos {
-    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #fff;
   }
   
   .descripciones {
-    font-size: 16px;
+    display: flex;
+    padding-left:30% ;
+    width: 800px;
+    font-size: 34px;
     margin-bottom: 30px;
+    color: #fff;
+    
+    
+    
   }
   
   .estadisticas {
     display: flex;
+    padding-top: 70px;
     justify-content: center;
-    gap: 30px;
+    gap: 160px;
   }
   
   .estadistica {
@@ -341,8 +391,8 @@ body {
   }
   
   .circulo {
-    width: 120px;
-    height: 120px;
+    width: 370px;
+    height: 370px;
     border: 2px solid #FFF;
     border-radius: 50%;
     display: flex;
@@ -352,28 +402,79 @@ body {
   }
   
   .numero {
-    font-size: 32px;
+    font-size: 72px;
     font-weight: bold;
     color: #FFF;
+    padding-top: 15px;
   }
   
   .etiqueta {
-    font-size: 18px;
+    font-size: 60px;
     color: #FFF;
     margin-top: 5px;
   }
   
 
 
+/* SEGUNDA INFORMACION SUSHI */
 
-
-.pedido2 {
+.segunda-informacion__sushi {
     height: 900px;
     background-color: #ffd17e;
     color: #ffffff;
     text-align: center;
     padding: 40px 0;
+    position: relative;
 }
+
+.segunda-informacion{
+    position: absolute;
+    width: 550px;
+    text-align: left;
+    left: 330px;
+    top: 220px;
+
+}
+
+.segunda-informacion__titulo{
+    font-size: 70px;
+    font-weight: bold;
+    color: #282F3F;
+  }
+  
+  .segunda-informacion__descripcion {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .segunda-informacion__boton {
+    margin-top: 35px;
+    background-color: #282F3F;
+    color: #FFF;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 34px;
+
+    transition: background-color 0.3s;
+  }
+  
+  .segunda-informacion__boton:hover {
+    background-color: #1f2633;
+  }
+
+  .segunda-informacion__imagen-circular{
+    position: absolute;
+    z-index: 1;
+    right: 160px;
+    top: 180px;
+    width: 600px;
+  }
+
+
+
 .pedido3 {
     height: 900px;
     background-color: #21243d;
