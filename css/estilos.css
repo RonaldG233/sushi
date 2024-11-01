@@ -136,7 +136,7 @@ body {
 
 
 /* Sección de menú popular */
-.contenedor__menu {
+.menu {
     height: 900px;
     background-color: #21243d;
     color: #ffffff;
@@ -194,7 +194,7 @@ body {
 }
 
 
-.contenedor-menu {
+.contenedor__menu {
     display: flex;
     justify-content: space-evenly;
     padding-top: 70px;
@@ -204,23 +204,23 @@ body {
     max-width: 20%;
 }
 
-.item-menu img {
+.item__menu-imagenes{
     width: 80%;
     border-radius: 10px;
 }
 
-.item-menu h3 {
+.item__menu-titulo {
     margin-top: 10px;
     font-size: 42px;
 }
 
-.item-menu p {
+.item__menu-texto{
     font-size: 18px;
 }
 
 /* pedido */
 
-.pedido {
+.primera__informacion-sushi {
     height: 900px;
     background-color: #ffd17e;
     color: #ffffff;
@@ -229,36 +229,37 @@ body {
     position: relative;
 }
 
-.pedido__puntos-superior-derecho{
+.primera__informacion-sushi__puntos-superior-derecho{
     position: absolute;
     right: 30px;
 }
 
-.pedido__w-centro{
+.primera__informacion-sushi__w-centro{
     position: absolute;
     top: 140px;
     right: 750px;
 }
 
-.pedido__circulo-inferior-derecho{
+.primera__informacion-sushi__circulo-inferior-derecho{
     position: absolute;
     right: 0px;
     top: 730px;
 }
 
-.pedido__puntos-inferior-izquierda{
+.primera__informacion-sushi__puntos-inferior-izquierda{
     position: absolute;
     left: 30px;
     top: 760px;
 }
-.pedido__circulo-izquierdo{
+.primera__informacion-sushi__circulo-izquierdo{
     position: absolute;
     left: 100px;
     top: 160px;
 }
 
 
-.pedido__imagen-circular{
+
+.primera__informacion-imagen-circular{
     position: absolute;
     z-index: 1;
     left: 160px;
@@ -269,10 +270,7 @@ body {
 
 
 
-
-
-
-.contenido {
+.primera__informacion{
     position: absolute;
     width: 550px;
     top: 230px;
@@ -280,19 +278,19 @@ body {
     text-align: left;
     
   }
-.titulo {
+.primera__informacion-titulo {
     font-size: 70px;
     font-weight: bold;
     color: #282F3F;
   }
   
-  .descripcion {
+  .primera__informacion-descripcion {
     font-size: 34px;
     margin: 10px 0;
     color: #333;
   }
   
-  .boton {
+  .primera__informacion-boton {
     margin-top: 35px;
     background-color: #282F3F;
     color: #FFF;
@@ -305,12 +303,12 @@ body {
     transition: background-color 0.3s;
   }
   
-  .boton:hover {
+  .primera__informacion-boton:hover {
     background-color: #1f2633;
   }
 
 /* Sección de estadísticas */
-.estadisticasas {
+.menu__estadisticas{
     height: 900px;
     background-color: #21243d;
     padding: 40px 0;
@@ -319,43 +317,43 @@ body {
 }
 
 
-.estadisticaas__puntos-izquierda-superior{
+.menu__estadisticas__puntos-izquierda-superior{
     position: absolute;
     left: 150px;
     top: 70px;
 }
 
-.estadisticaas__w-izquierda-superior{
+.menu__estadisticas__w-izquierda-superior{
     position: absolute;
     left: 160px;
     top: 250px;
 }
 
-.estadisticaas__circulo-derecha-superior{
+.menu__estadisticas__circulo-derecha-superior{
     position: absolute;
     right: 150px;
     top: 100px;
 }
 
-.estadisticaas__circulo-inferior-izquierda{
+.menu__estadisticas__circulo-inferior-izquierda{
     position: absolute;
     bottom: 0;
     left: 350px;
 }
 
-.estadisticaas__puntos-abajo-derecha{
+.menu__estadisticas__puntos-abajo-derecha{
     position: absolute;
     bottom: 80px;
     right: 650px;
 }
 
-.estadisticaas__w-derecha-inferior{
+.menu__estadisticas__w-derecha-inferior{
     position: absolute;
     bottom: 130px;
     right: 150px;
 }
 
-.titulos {
+.menu__estadisticas-titulo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,7 +363,7 @@ body {
     color: #fff;
   }
   
-  .descripciones {
+  .menu__estadisticas-descripcion{
     display: flex;
     padding-left:30% ;
     width: 800px;
@@ -377,7 +375,7 @@ body {
     
   }
   
-  .estadisticas {
+  .contenedor__estadisticas {
     display: flex;
     padding-top: 70px;
     justify-content: center;
@@ -390,7 +388,7 @@ body {
     align-items: center;
   }
   
-  .circulo {
+  .estadistica__circulo {
     width: 370px;
     height: 370px;
     border: 2px solid #FFF;
@@ -401,14 +399,14 @@ body {
     align-items: center;
   }
   
-  .numero {
+  .estadistica__numero {
     font-size: 72px;
     font-weight: bold;
     color: #FFF;
     padding-top: 15px;
   }
   
-  .etiqueta {
+  .estadistica__etiqueta {
     font-size: 60px;
     color: #FFF;
     margin-top: 5px;
