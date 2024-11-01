@@ -1,9 +1,17 @@
 /* Estilos generales */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
     /* font-family: Arial, sans-serif; */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Encabezado */
@@ -15,24 +23,26 @@ body {
     background-color: #21243d;
     /* padding: 10px 20px; */
     position: fixed;
+    justify-content: space-around;
 }
 
 .logo{
     display: flex;
     padding-left: 8px;
-    width: 200px;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo__restaurante{
     display: flex;
     
-    height: 50px;
-    width: 100%;
+    height: 40px;
+    width: 200px;
     /* align-items: center;
     justify-content: center; */
     padding-left: 10px;
-    padding-top: 15px;
+    
     margin-left:15px ;
 
     
@@ -43,7 +53,7 @@ body {
 .navegacion{
     display: flex;
     /* width: 900px; */
-    padding-left: 90px;
+    /* padding-left: 90px; */
     
     
 }
@@ -62,7 +72,8 @@ body {
 .navegacion li{
     display: flex;
     height: 65px;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -77,7 +88,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 500px;
+    /* width: 500px; */
     font-size: 30px;
     /* padding-left: 110px; */
     
@@ -85,6 +96,8 @@ body {
 
 .img__search{
    color: #f4f4f4;
+   font-size: 30px;
+   font-weight: 800;
 }
 
 
@@ -137,12 +150,13 @@ body {
 
 /* Sección de menú popular */
 .menu {
-    height: 900px;
+    min-height: max-content;
     background-color: #21243d;
     color: #ffffff;
     text-align: center;
     padding: 40px 0;
     position: relative;
+    
 }
 
 .menu__img_circulo-superior-derecho{
@@ -218,7 +232,9 @@ body {
     font-size: 18px;
 }
 
-/* pedido */
+
+
+/*primera informacion*/
 
 .primera__informacion-sushi {
     height: 900px;
@@ -316,6 +332,7 @@ body {
     position: relative;
 }
 
+/* imagenes de menu estadisticas */
 
 .menu__estadisticas__puntos-izquierda-superior{
     position: absolute;
@@ -353,6 +370,8 @@ body {
     right: 150px;
 }
 
+/* contenido de menu estadisticas */
+
 .menu__estadisticas-titulo {
     display: flex;
     justify-content: center;
@@ -389,27 +408,37 @@ body {
   }
   
   .estadistica__circulo {
-    width: 370px;
-    height: 370px;
-    border: 2px solid #FFF;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #FFF;
     border-radius: 50%;
     display: flex;
+    
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
+    
   }
   
   .estadistica__numero {
+    /* display: flex; */
     font-size: 72px;
     font-weight: bold;
     color: #FFF;
-    padding-top: 15px;
+    padding-top: 10px;
+    position: absolute;
+    /* bottom: 100px; */
+
+    
   }
   
   .estadistica__etiqueta {
+    
     font-size: 60px;
     color: #FFF;
-    margin-top: 5px;
+    padding-top: 100px;
+
+    
   }
   
 
@@ -424,6 +453,40 @@ body {
     padding: 40px 0;
     position: relative;
 }
+
+
+
+.segunda-informacion__sushi-circulo-centro-inferior{
+    position: absolute;
+    bottom: 75px;
+    left: 800px;
+}
+
+.segunda-informacion__sushi-w-superior-izquierda{
+    position: absolute;
+    top: 180px;
+    left:340px;
+}
+
+.segunda-informacion__sushi-puntos-superior-centro{
+    position: absolute;
+    top: 40px;
+    left: 800px;
+
+}
+
+.segunda-informacion__sushi-circulo-derecha-superior{
+    position: absolute;
+    right: 110px;
+    top: 140px;
+}
+
+.segunda-informacion__sushi-puntos-inferior-derecha{
+    position: absolute;
+    bottom: 90px;
+    right: 60px;
+}
+
 
 .segunda-informacion{
     position: absolute;
@@ -495,4 +558,30 @@ body {
     color: #ffffff;
     text-align: center;
     padding: 40px 0;
+}
+
+
+
+
+
+
+@media(width < 850px){
+    .contenedor__menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .item-menu{
+        width: 400px;
+        max-width: none;
+
+        margin-bottom: 40px;
+    }
+    .menu{
+        height: 100vh;
+    }
+    .navegacion ul{
+        width: 500px;
+    }
 }
