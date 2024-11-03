@@ -1,0 +1,79 @@
+@import url(./estilos.css);
+
+/* Sección de menú popular */
+.menu {
+  min-height: max-content;
+  background-color: #21243d;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.menu__img_circulo-superior-derecho {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.menu__img_puntos-superior-izquierda {
+  position: absolute;
+  left: 440px;
+  top: 20px;
+}
+.menu__img_w-superior-izquierda {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+.menu__img_circulo-izquierdo-inferior {
+  position: absolute;
+  left: 0;
+  top: 700px;
+}
+
+.menu__img_puntos-medio-derecha {
+  position: absolute;
+  right: 0;
+  top: 400px;
+}
+
+.menu__img_w-inferior-derecha {
+  position: absolute;
+  right: 0;
+  top: 870px;
+}
+
+.menu__titulo {
+  padding-top: 30px;
+  font-size: 62px;
+}
+
+.menu__texto {
+  width: 660px;
+  margin: 0 auto;
+}
+
+.contenedor__menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 70px;
+}
+
+.item-menu {
+  max-width: 20%;
+}
+
+.item__menu-imagenes {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.item__menu-titulo {
+  margin-top: 10px;
+  font-size: 42px;
+}
+
+.item__menu-texto {
+  font-size: 18px;
+}

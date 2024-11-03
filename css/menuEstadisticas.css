@@ -1,0 +1,110 @@
+@import url(./estilos.css);
+
+/* Sección de estadísticas */
+.menu__estadisticas {
+  height: 900px;
+  background-color: #21243d;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+
+/* imagenes de menu estadisticas */
+
+.menu__estadisticas__puntos-izquierda-superior {
+  position: absolute;
+  left: 150px;
+  top: 70px;
+}
+
+.menu__estadisticas__w-izquierda-superior {
+  position: absolute;
+  left: 160px;
+  top: 250px;
+}
+
+.menu__estadisticas__circulo-derecha-superior {
+  position: absolute;
+  right: 150px;
+  top: 100px;
+}
+
+.menu__estadisticas__circulo-inferior-izquierda {
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+}
+
+.menu__estadisticas__puntos-abajo-derecha {
+  position: absolute;
+  bottom: 80px;
+  right: 650px;
+}
+
+.menu__estadisticas__w-derecha-inferior {
+  position: absolute;
+  bottom: 130px;
+  right: 150px;
+}
+
+/* contenido de menu estadisticas */
+
+.menu__estadisticas-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.menu__estadisticas-descripcion {
+  display: flex;
+  padding-left: 30%;
+  width: 800px;
+  font-size: 34px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.contenedor__estadisticas {
+  display: flex;
+  padding-top: 70px;
+  justify-content: space-evenly;
+  /* gap: 160px; */
+}
+
+.estadistica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.estadistica__circulo {
+  max-width: 300px;
+  height: 300px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.estadistica__numero {
+  /* display: flex; */
+  font-size: 72px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 10px;
+  position: absolute;
+  /* bottom: 100px; */
+}
+
+.estadistica__etiqueta {
+  font-size: 60px;
+  color: #fff;
+  padding-top: 100px;
+}

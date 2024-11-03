@@ -1,0 +1,139 @@
+@import url(./estilos.css);
+
+/* Encabezado */
+.header {
+  display: flex;
+  width: 100%;
+  height: var(--altura-header);
+  align-items: center;
+  background-color: var(--color-header);
+  /* padding: 10px 20px; */
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  padding-left: 8px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__restaurante {
+  display: flex;
+  height: var(--altura-logo);
+  width: var(--ancho-logo);
+  padding-left: 10px; /* Sin cambios */
+  margin-left: var(--margen-logo);
+}
+
+.navegacion {
+  display: flex;
+  /* width: 900px; */
+  /* padding-left: 90px; */
+}
+
+.navegacion ul {
+  list-style-type: none;
+  width: 1000px;
+  display: flex;
+  align-content: space-between;
+}
+
+.navegacion li {
+  display: flex;
+  height: var(--alto-navegacion-li);
+  max-width: 300px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.navegacion li:hover {
+  background-color: var(--color-header-hover);
+  transition: 1s;
+  border-radius: var(--radio-borde-header-li);
+}
+
+.navegacion i {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: var(--tamaño-icono);
+}
+
+.img__search {
+  color: var(--color-icono);
+  font-size: var(--tamaño-icono);
+  font-weight: 800;
+}
+
+.navegacion a {
+  color: var(--color-texto-claro);
+  text-decoration: none;
+  font-size: var(--tamaño-texto-header);
+}
+
+.imagen-principal img {
+  max-width: 100%;
+  border-radius: var(--radio-borde-imagen);
+}
+
+@media (width < 1270px) {
+  .navegacion ul {
+    display: none;
+  }
+}
+@media (width < 850px) {
+  .contenedor__menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-menu {
+    width: 400px;
+    max-width: none;
+
+    margin-bottom: 40px;
+  }
+  .menu {
+    height: 100vh;
+  }
+  .navegacion ul {
+    width: 500px;
+  }
+  .menu__img_circulo-izquierdo-inferior {
+    top: 1650px;
+  }
+  .menu__img_w-superior-izquierda {
+    left: 0;
+    top: 250px;
+  }
+  .seccion-principal {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .contenido-principal {
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contenido-principal h2 {
+    display: flex;
+    font-size: 100px;
+    justify-content: center;
+  }
+
+  .contenido-principal p {
+    font-size: 30px;
+  }
+
+  .boton-ordenar {
+    font-size: 30px;
+    padding: 15px 60px;
+  }
+}

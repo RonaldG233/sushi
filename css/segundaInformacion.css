@@ -1,0 +1,85 @@
+@import url(./estilos.css);
+
+/* SEGUNDA INFORMACION SUSHI */
+
+.segunda-informacion__sushi {
+  height: 900px;
+  background-color: #ffd17e;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.segunda-informacion__sushi-circulo-centro-inferior {
+  position: absolute;
+  bottom: 75px;
+  right: 10px;
+}
+
+.segunda-informacion__sushi-w-superior-izquierda {
+  position: absolute;
+  top: 180px;
+  left: 340px;
+}
+
+.segunda-informacion__sushi-puntos-superior-centro {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.segunda-informacion__sushi-circulo-derecha-superior {
+  position: absolute;
+  right: 110px;
+  top: 140px;
+}
+
+.segunda-informacion__sushi-puntos-inferior-derecha {
+  position: absolute;
+  bottom: 90px;
+  right: 60px;
+}
+
+.segunda-informacion {
+  position: absolute;
+  width: 550px;
+  text-align: left;
+  left: 0px;
+  top: 220px;
+}
+
+.segunda-informacion__titulo {
+  font-size: 70px;
+  font-weight: bold;
+  color: #282f3f;
+}
+
+.segunda-informacion__descripcion {
+  font-size: 34px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.segunda-informacion__boton {
+  background-color: var(--color-boton);
+  color: var(--color-texto-claro);
+  padding: 20px 30px;
+  border: none;
+  border-radius: var(--radio-borde-boton);
+  cursor: pointer;
+  font-size: var(--tamaño-boton);
+  transition: background-color 0.3s;
+}
+
+.segunda-informacion__boton:hover {
+  background-color: var(--color-boton-hover);
+}
+
+.segunda-informacion__imagen-circular {
+  position: absolute;
+  z-index: 1;
+  right: var(--posicion-imagen-circular-right);
+  top: var(--posicion-imagen-circular-top);
+  width: var(--tamano-imagen-circular);
+}

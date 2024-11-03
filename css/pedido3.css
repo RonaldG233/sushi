@@ -1,0 +1,105 @@
+@import url(./estilos.css);
+
+.pedido3 {
+  height: 900px;
+  background-image: url(/Elementos/Parte5/Fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color-texto-claro);
+  text-align: center;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pedido3__comentario-comensal {
+  max-width: 900px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.pedido3__imagen-perfil {
+  width: 300px;
+  height: 300px;
+  margin-bottom: var(--espaciado-pequeño);
+  border-radius: 50%;
+}
+
+.pedido3__texto {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.pedido3__nombre {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-texto-claro);
+}
+
+/* Responsividad */
+/* @media (max-width: 1024px) {
+    .pedido3 {
+      height: auto;
+      padding: 20px;
+    }
+  
+    .pedido3__comentario-comensal {
+      max-width: 80%;
+      padding: 30px;
+    }
+  
+    .pedido3__imagen-perfil {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .pedido3__texto,
+    .pedido3__nombre {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pedido3__comentario-comensal {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    .pedido3__imagen-perfil {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .pedido3__texto {
+      font-size: 1.5rem;
+    }
+  
+    .pedido3__nombre {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pedido3__comentario-comensal {
+      padding: 15px;
+    }
+  
+    .pedido3__imagen-perfil {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .pedido3__texto {
+      font-size: 1.25rem;
+    }
+  
+    .pedido3__nombre {
+      font-size: 1.25rem;
+    }
+  } */
+
+/* Parte3 */
