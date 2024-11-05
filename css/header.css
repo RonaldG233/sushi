@@ -79,12 +79,13 @@
   border-radius: var(--radio-borde-imagen);
 }
 
-@media (width < 1270px) {
+/* @media (width < 1270px) {
   .navegacion ul {
     display: none;
   }
-}
+} */
 @media (width < 850px) {
+  /* menu */
   .contenedor__menu {
     flex-direction: column;
     justify-content: center;
@@ -136,4 +137,17 @@
     font-size: 30px;
     padding: 15px 60px;
   }
+
+  /* primera informacion */
+  .primera__informacion{
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 350px ;
+
+  }
+  
+
 }

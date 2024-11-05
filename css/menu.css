@@ -8,6 +8,7 @@
   text-align: center;
   padding: 40px 0;
   position: relative;
+  /* height: 100vh; */
 }
 
 .menu__img_circulo-superior-derecho {
@@ -50,6 +51,7 @@
 }
 
 .menu__texto {
+  padding-top: 50px;
   width: 660px;
   margin: 0 auto;
 }
