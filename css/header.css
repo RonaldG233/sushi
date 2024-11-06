@@ -140,14 +140,15 @@
 
   /* primera informacion */
   .primera__informacion{
-    
-    
     display: flex;
     flex-direction: column;
-    
-    padding-top: 350px ;
+    padding-left: 20px;
+    padding-top: 450px ;
 
   }
-  
+ 
+/* .primera__informacion-sushi {
+  height: 100vh;
+} */
 
 }
