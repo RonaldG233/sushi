@@ -44,7 +44,7 @@
   align-items: center;
   height: 1000px;
   justify-content: space-between;
-  background-image: url(/Elementos/Parte1/_1_orig.jpeg);
+  background-image: url(../Elementos/Parte1/Imagen_de_fondo.jpeg);
   background-size: cover;
   background-position: center;
   padding: 0 50px;
