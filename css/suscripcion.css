@@ -1,8 +1,8 @@
-@import url(./estilos.css);
+@import url(../css/estilos.css);
 
 /* Parte4 */
 
-.pedido4 {
+.suscripcion {
   width: 100%;
   height: 1000px;
   background-color: var(--color-fondo-pedido4);
@@ -12,27 +12,27 @@
   position: relative;
 }
 
-.pedido4__titulo {
+.suscripcion__titulo {
   font-size: var(--tamaño-texto-titulo-grande);
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.pedido4__descripcion {
+.suscripcion__descripcion {
   font-size: var(--tamaño-texto-descripcion);
   max-width: 50%;
   margin: 50px auto 80px auto;
   color: #555;
 }
 
-.pedido4__formulario {
+.suscripcion__formulario {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: var(--espaciado-pequeño);
 }
 
-.pedido4__input {
+.suscripcion__input {
   padding: 15px 25px;
   font-size: var(--tamaño-texto-parrafo);
   border: none;
@@ -43,7 +43,7 @@
   box-sizing: border-box;
 }
 
-.pedido4__boton {
+.suscripcion__boton {
   position: absolute;
   padding: 15px 30px;
   font-size: var(--tamaño-texto-parrafo);
@@ -56,43 +56,43 @@
   margin-left: 600px;
 }
 
-.pedido4__decoracion {
+.suscripcion__decoracion {
   position: absolute;
 }
 
 /* posiciones específicas para las figuras */
 
-.pedido4__decoracion--circulo-arriba-izq {
+.suscripcion__decoracion--circulo-arriba-izq {
   top: 5%;
   right: 0;
   width: 150px;
 }
 
-.pedido4__decoracion--circulo-abajo-centro {
+.suscripcion__decoracion--circulo-abajo-centro {
   bottom: 15%;
   left: 50%;
   width: 200px;
 }
 
-.pedido4__decoracion--puntos-arriba-der {
+.suscripcion__decoracion--puntos-arriba-der {
   top: 15%;
   right: 85%;
   width: 200px;
 }
 
-.pedido4__decoracion--puntos-abajo-der {
+.suscripcion__decoracion--puntos-abajo-der {
   bottom: 20%;
   right: 15%;
   width: 100px;
 }
 
-.pedido4__decoracion--onda-arriba-izq {
+.suscripcion__decoracion--onda-arriba-izq {
   top: 18%;
   left: 80%;
   width: 100px;
 }
 
-.pedido4__decoracion--onda-abajo-izq {
+.suscripcion__decoracion--onda-abajo-izq {
   bottom: 25%;
   left: 20%;
   width: 100px;
@@ -105,86 +105,86 @@
         padding: 20px;
     }
 
-    .pedido4__titulo {
+    .suscripcion__titulo {
         font-size: 3.5rem;
     }
 
-    .pedido4__descripcion {
+    .suscripcion__descripcion {
         font-size: 1.5rem;
         max-width: 70%;
     }
 
-    .pedido4__input {
+    .suscripcion__input {
         width: 500px;
         padding: 15px 20px;
     }
 
-    .pedido4__boton {
+    .suscripcion__boton {
         font-size: 1rem;
         padding: 15px 25px;
     }
 }
 
 @media (max-width: 768px) {
-    .pedido4__titulo {
+    .suscripcion__titulo {
         font-size: 2.5rem;
     }
 
-    .pedido4__descripcion {
+    .suscripcion__descripcion {
         font-size: 1.25rem;
         max-width: 80%;
     }
 
-    .pedido4__input {
+    .suscripcion__input {
         width: 100%;
         padding: 12px 15px;
     }
 
-    .pedido4__boton {
+    .suscripcion__boton {
         font-size: 1rem;
         padding: 12px 20px;
     }
     
 
-    .pedido4__decoracion--circulo-arriba-izq,
-    .pedido4__decoracion--circulo-abajo-centro,
-    .pedido4__decoracion--puntos-arriba-der,
-    .pedido4__decoracion--puntos-abajo-der,
-    .pedido4__decoracion--onda-arriba-izq,
-    .pedido4__decoracion--onda-abajo-izq {
+    .suscripcion__decoracion--circulo-arriba-izq,
+    .suscripcion__decoracion--circulo-abajo-centro,
+    .suscripcion__decoracion--puntos-arriba-der,
+    .suscripcion__decoracion--puntos-abajo-der,
+    .suscripcion__decoracion--onda-arriba-izq,
+    .suscripcion__decoracion--onda-abajo-izq {
         width: 80px;
     }
 }
 
 @media (max-width: 480px) {
-    .pedido4__titulo {
+    .suscripcion__titulo {
         font-size: 2rem;
     }
 
-    .pedido4__descripcion {
+    .suscripcion__descripcion {
         font-size: 1rem;
         max-width: 90%;
     }
 
-    .pedido4__input {
+    .suscripcion__input {
         width: 100%;
         padding: 10px;
         border-radius: 30px;
         margin-bottom: 10px;
     }
 
-    .pedido4__boton {
+    .suscripcion__boton {
         font-size: 0.875rem;
         padding: 10px 15px;
         border-radius: 30px;
     }
 
-    .pedido4__decoracion--circulo-arriba-izq,
-    .pedido4__decoracion--circulo-abajo-centro,
-    .pedido4__decoracion--puntos-arriba-der,
-    .pedido4__decoracion--puntos-abajo-der,
-    .pedido4__decoracion--onda-arriba-izq,
-    .pedido4__decoracion--onda-abajo-izq {
+    .suscripcion__decoracion--circulo-arriba-izq,
+    .suscripcion__decoracion--circulo-abajo-centro,
+    .suscripcion__decoracion--puntos-arriba-der,
+    .suscripcion__decoracion--puntos-abajo-der,
+    .suscripcion__decoracion--onda-arriba-izq,
+    .suscripcion__decoracion--onda-abajo-izq {
         width: 60px;
     }
 } */

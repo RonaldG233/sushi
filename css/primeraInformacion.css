@@ -1,4 +1,4 @@
-@import url(./estilos.css);
+@import url(../css/estilos.css);
 
 /*primera informacion*/
 
@@ -40,29 +40,26 @@
   top: 160px;
 }
 
-.primera__informacion-contenedor{
+.primera__informacion-contenedor {
   display: flex;
   justify-content: space-between;
 }
 
-.primera__informacion-imagen{
+.primera__informacion-imagen {
   width: 50%;
 }
 
-
 .primera__informacion-imagen-circular {
-  
   /* z-index: 1; */
   position: relative;
- 
+
   display: flex;
   margin-top: 170px;
   margin-left: 150px;
 }
 
 .primera__informacion {
-  
-  text-align: left; 
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: end;

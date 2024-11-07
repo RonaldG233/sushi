@@ -1,4 +1,4 @@
-@import url(./estilos.css);
+@import url(../css/estilos.css);
 
 /* Encabezado */
 .header {
@@ -139,34 +139,25 @@
   }
 
   /* primera informacion */
-  .primera__informacion-contenedor{
+  .primera__informacion-contenedor {
     display: flex;
     flex-direction: column;
-    
-
   }
-  .primera__informacion{
+  .primera__informacion {
     margin-left: 25%;
-    margin-top: 20px ;
+    margin-top: 20px;
   }
 
- 
-
-  .segunda__informacion-contenedor{
-    
+  .segunda__informacion-contenedor {
     flex-direction: column;
     height: 100vh;
-    
   }
 
-  .segunda-informacion{
+  .segunda-informacion {
     justify-content: center;
     margin-bottom: 45px;
   }
   .segunda-informacion__imagen-circular {
     margin-left: 50%;
-    
   }
-
-
 }

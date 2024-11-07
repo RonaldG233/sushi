@@ -1,12 +1,12 @@
 @import url(../css/estilos.css);
 
-.contenido-principal {
+.contenido-principal__contenido {
   max-width: 100%;
   text-align: left;
   padding: var(--espaciado-medio);
 }
 
-.contenido-principal h2 {
+.contenido-principal__titulo {
   display: flex;
   font-size: 150px;
   margin-bottom: var(--espaciado-pequeño);
@@ -14,14 +14,14 @@
   padding-top: 90px;
 }
 
-.principal__texto {
+.contenido-principal__texto {
   font-size: 40px;
   font-weight: 300;
   margin-bottom: var(--espaciado-pequeño);
   width: 50%;
 }
 
-.boton-ordenar {
+.contenido-principal__boton {
   margin-top: var(--espaciado-medio);
   padding: 25px 110px;
   background-color: var(--color-acento);
@@ -35,16 +35,16 @@
   transition: 0.3s;
 }
 
-.boton-ordenar:hover {
+.contenido-principal__boton:hover {
   background-color: var(--color-acento-secundario);
 }
 
-.seccion-principal {
+.contenido-principal {
   display: flex;
   align-items: center;
   height: 1000px;
   justify-content: space-between;
-  background-image: url(../Elementos/Parte1/Imagen_de_fondo.jpeg);
+  background-image: url(../Elementos/Imagen_Fondo/Imagen_de_fondo.jpeg);
   background-size: cover;
   background-position: center;
   padding: 0 50px;
@@ -59,60 +59,60 @@
         padding: 50px;
     }
 
-    .contenido-principal h2 {
+    .contenido-principal__titulo {
         display: flex;
         font-size: 150px;
     }
 
-    .contenido-principal p {
+    .contenido-principal__contenido p {
         font-size: 35px;
     }
 
-    .boton-ordenar {
+    .contenido-principal__boton {
         font-size: 35px;
         padding: 20px 80px;
     }
 } */
 
 /* @media (max-width: 768px) {
-    .seccion-principal {
+    .contenido-principal__contenido {
         flex-direction: column;
         justify-content: center;
         padding: 20px;
     }
 
-    .contenido-principal {
+    .contenido-principal__contenido {
         max-width: 100%;
         text-align: center;
         padding: 20px;
     }
 
-    .contenido-principal h2 {
+    .contenido-principal__titulo {
         display: flex;
         font-size: 100px;
     }
 
-    .contenido-principal p {
+    .contenido-principal__contenido p {
         font-size: 30px;
     }
 
-    .boton-ordenar {
+    .contenido-principal__boton {
         font-size: 30px;
         padding: 15px 60px;
     }
 } */
 
 /* @media (max-width: 480px) {
-    .contenido-principal h2 {
+    .contenido-principal__titulo {
         display: flex;  
         font-size: 70px;
     }
 
-    .contenido-principal p {
+    .contenido-principal__contenido p {
         font-size: 25px;
     }
 
-    .boton-ordenar {
+    .contenido-principal__boton {
         font-size: 25px;
         padding: 10px 40px;
     }

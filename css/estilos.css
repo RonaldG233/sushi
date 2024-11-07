@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url(./header.css);
-@import url(../css/parte1.css);
-@import url(./menu.css);
-@import url(./primeraInformacion.css);
-@import url(./menuEstadisticas.css);
-@import url(./segundaInformacion.css);
-@import url(../css/pedido3.css);
-@import url(./pedido4.css);
-@import url(./footer.css);
+@import url(../css/header.css);
+@import url(../css/contenido-principal.css);
+@import url(../css/menu.css);
+@import url(../css/primeraInformacion.css);
+@import url(../css/menuEstadisticas.css);
+@import url(../css/segundaInformacion.css);
+@import url(../css/comentario.css);
+@import url(../css/suscripcion.css);
+@import url(../css/footer.css);
 
 /* Estilos generales */
 

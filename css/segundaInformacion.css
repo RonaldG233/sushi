@@ -1,10 +1,10 @@
-@import url(./estilos.css);
+@import url(../css/estilos.css);
 
 /* SEGUNDA INFORMACION SUSHI */
 
 .segunda-informacion__sushi {
   min-height: max-content;
-  
+
   height: 1000px;
   background-color: #ffd17e;
   color: #ffffff;
@@ -43,31 +43,29 @@
   right: 60px;
 }
 
-.segunda__informacion-contenedor{
+.segunda__informacion-contenedor {
   display: flex;
   justify-content: space-between;
   margin-top: 180px;
-  
 }
 
 .segunda-informacion {
-  text-align: left; 
+  text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content:baseline;
+  justify-content: baseline;
   width: 700px;
   margin-top: 80px;
   margin-left: 160px;
-
 }
 
-.segunda-informacion__imagen{
+.segunda-informacion__imagen {
   width: 35%;
 }
 
 .segunda-informacion__imagen-circular {
   position: relative;
- 
+
   display: flex;
   /* margin-top: 170px;
   margin-left: 150px; */
@@ -75,7 +73,7 @@
   z-index: 1;
   right: var(--posicion-imagen-circular-right);
   top: var(--posicion-imagen-circular-top);*/
-  width: var(--tamano-imagen-circular); 
+  width: var(--tamano-imagen-circular);
   margin-right: 70px;
 }
 
@@ -107,5 +105,3 @@
 .segunda-informacion__boton:hover {
   background-color: var(--color-boton-hover);
 }
-
-

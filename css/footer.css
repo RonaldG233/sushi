@@ -1,6 +1,6 @@
-@import url(./estilos.css);
+@import url(../css/estilos.css);
 
-.footerpagina {
+.footer {
   width: 100%;
   height: auto;
   background-color: var(--color-fondo-pie);
@@ -11,41 +11,41 @@
   gap: var(--espaciado-redes);
 }
 
-.footerpagina__informacion {
+.footer__informacion {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 0.6rem;
 }
 
-.informacion__titulo {
+.footer__titulo {
   font-size: var(--tamaño-texto-titulo-footer);
   font-weight: var(--peso-texto-titulo-footer);
 }
 
-.informacion__texto,
-.informacion__link {
+.footer__texto,
+.footer__link-texto {
   font-size: var(--tamaño-texto-footer);
   width: 50%;
 }
 
-.informacion__link {
+.footer__link-texto {
   color: var(--color-texto-claro);
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.informacion__link:hover {
+.footer__link-texto:hover {
   color: var(--color-fondo-pedido4);
 }
 
-.redes {
+.footer__redes {
   display: flex;
   gap: var(--espaciado-redes);
   margin-top: var(--margen-top-redes);
 }
 
-.redes__link {
+.footer__link {
   background-color: var(--color-principal);
   width: var(--tamaño-icono-redes);
   height: var(--tamaño-icono-redes);
@@ -56,11 +56,11 @@
   transition: opacity 0.3s;
 }
 
-.redes__link:hover {
+.footer__link:hover {
   opacity: 0.5;
 }
 
-.redes__link img {
+.footer__social {
   width: var(--tamaño-imagen-redes);
   height: var(--tamaño-imagen-redes);
 }
