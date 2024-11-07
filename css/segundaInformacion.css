@@ -3,7 +3,9 @@
 /* SEGUNDA INFORMACION SUSHI */
 
 .segunda-informacion__sushi {
-  height: 900px;
+  min-height: max-content;
+  
+  height: 1000px;
   background-color: #ffd17e;
   color: #ffffff;
   text-align: center;
@@ -14,7 +16,7 @@
 .segunda-informacion__sushi-circulo-centro-inferior {
   position: absolute;
   bottom: 75px;
-  right: 10px;
+  right: 50%;
 }
 
 .segunda-informacion__sushi-w-superior-izquierda {
@@ -31,7 +33,7 @@
 
 .segunda-informacion__sushi-circulo-derecha-superior {
   position: absolute;
-  right: 110px;
+  right: 170px;
   top: 140px;
 }
 
@@ -41,12 +43,40 @@
   right: 60px;
 }
 
+.segunda__informacion-contenedor{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 180px;
+  
+}
+
 .segunda-informacion {
-  position: absolute;
-  width: 550px;
-  text-align: left;
-  left: 0px;
-  top: 220px;
+  text-align: left; 
+  display: flex;
+  flex-direction: column;
+  justify-content:baseline;
+  width: 700px;
+  margin-top: 80px;
+  margin-left: 160px;
+
+}
+
+.segunda-informacion__imagen{
+  width: 35%;
+}
+
+.segunda-informacion__imagen-circular {
+  position: relative;
+ 
+  display: flex;
+  /* margin-top: 170px;
+  margin-left: 150px; */
+  /* position: absolute;
+  z-index: 1;
+  right: var(--posicion-imagen-circular-right);
+  top: var(--posicion-imagen-circular-top);*/
+  width: var(--tamano-imagen-circular); 
+  margin-right: 70px;
 }
 
 .segunda-informacion__titulo {
@@ -62,6 +92,7 @@
 }
 
 .segunda-informacion__boton {
+  width: 300px;
   background-color: var(--color-boton);
   color: var(--color-texto-claro);
   padding: 20px 30px;
@@ -70,16 +101,11 @@
   cursor: pointer;
   font-size: var(--tamaño-boton);
   transition: background-color 0.3s;
+  margin-top: 50px;
 }
 
 .segunda-informacion__boton:hover {
   background-color: var(--color-boton-hover);
 }
 
-.segunda-informacion__imagen-circular {
-  position: absolute;
-  z-index: 1;
-  right: var(--posicion-imagen-circular-right);
-  top: var(--posicion-imagen-circular-top);
-  width: var(--tamano-imagen-circular);
-}
+

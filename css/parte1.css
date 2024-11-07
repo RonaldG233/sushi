@@ -42,7 +42,7 @@
 .seccion-principal {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 1000px;
   justify-content: space-between;
   background-image: url(/Elementos/Parte1/_1_orig.jpeg);
   background-size: cover;

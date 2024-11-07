@@ -139,16 +139,34 @@
   }
 
   /* primera informacion */
-  .primera__informacion{
+  .primera__informacion-contenedor{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-top: 450px ;
+    
 
   }
+  .primera__informacion{
+    margin-left: 25%;
+    margin-top: 20px ;
+  }
+
  
-/* .primera__informacion-sushi {
-  height: 100vh;
-} */
+
+  .segunda__informacion-contenedor{
+    
+    flex-direction: column;
+    height: 100vh;
+    
+  }
+
+  .segunda-informacion{
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  .segunda-informacion__imagen-circular {
+    margin-left: 50%;
+    
+  }
+
 
 }

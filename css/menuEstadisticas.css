@@ -2,7 +2,7 @@
 
 /* Sección de estadísticas */
 .menu__estadisticas {
-  height: 900px;
+  height: 1000px;
   background-color: #21243d;
   padding: 40px 0;
   text-align: center;
@@ -51,6 +51,7 @@
 
 .menu__estadisticas-titulo {
   display: flex;
+  padding-top: 30px;
   justify-content: center;
   align-items: center;
   font-size: 70px;
@@ -61,16 +62,18 @@
 
 .menu__estadisticas-descripcion {
   display: flex;
-  padding-left: 30%;
+  justify-content: center;
+  align-items: center;
   width: 800px;
   font-size: 34px;
   margin-bottom: 30px;
   color: #fff;
+  margin: 0 auto;
 }
 
 .contenedor__estadisticas {
   display: flex;
-  padding-top: 70px;
+  margin-top: 120px;
   justify-content: space-evenly;
   /* gap: 160px; */
 }
@@ -82,29 +85,30 @@
 }
 
 .estadistica__circulo {
-  max-width: 300px;
-  height: 300px;
+  /* display: flex; */
+  width: 400px;
+  height: 400px;
   border: 5px solid #fff;
   border-radius: 50%;
   display: flex;
 
   flex-direction: column;
-
+  justify-content: center;
   align-items: center;
 }
 
 .estadistica__numero {
-  /* display: flex; */
+  
   font-size: 72px;
   font-weight: bold;
   color: #fff;
-  padding-top: 10px;
-  position: absolute;
+  /* padding-top: 10px; */
+  /* position: absolute; */
   /* bottom: 100px; */
 }
 
 .estadistica__etiqueta {
   font-size: 60px;
   color: #fff;
-  padding-top: 100px;
+  
 }

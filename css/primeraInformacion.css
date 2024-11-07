@@ -4,7 +4,7 @@
 
 .primera__informacion-sushi {
   min-height: max-content;
-  height: 100vh;
+  height: 1000px;
   background-color: #ffd17e;
   color: #ffffff;
   text-align: center;
@@ -40,15 +40,21 @@
   top: 160px;
 }
 
+.primera__informacion-contenedor{
+  display: flex;
+  justify-content: space-between;
+}
+
 .primera__informacion-imagen{
   width: 50%;
 }
+
 
 .primera__informacion-imagen-circular {
   
   /* z-index: 1; */
   position: relative;
-  width: 50;
+ 
   display: flex;
   margin-top: 170px;
   margin-left: 150px;
@@ -61,6 +67,8 @@
   flex-direction: column;
   justify-content: end;
   width: 500px;
+  margin-right: 20%;
+  margin-bottom: 60px;
 }
 .primera__informacion-titulo {
   font-size: 70px;
@@ -75,15 +83,15 @@
 }
 
 .primera__informacion-boton {
-  
+  width: 275px;
   margin-top: 35px;
   background-color: #282f3f;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border: none;
   border-radius: 35px;
   cursor: pointer;
-  font-size: 34px;
+  font-size: 30px;
 
   transition: background-color 0.3s;
 }
