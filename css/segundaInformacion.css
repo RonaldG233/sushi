@@ -60,19 +60,13 @@
 }
 
 .segunda-informacion__imagen {
-  width: 35%;
+  padding-right: 120px;
 }
 
 .segunda-informacion__imagen-circular {
-  /* position: relative; */
 
   display: flex;
-  /* margin-top: 170px;
-  margin-left: 150px; */
-  /* position: absolute;
-  z-index: 1;
-  right: var(--posicion-imagen-circular-right);
-  top: var(--posicion-imagen-circular-top);*/
+  position: relative;
   width: var(--tamano-imagen-circular);
   margin-right: 70px;
 }
@@ -104,4 +98,5 @@
 
 .segunda-informacion__boton:hover {
   background-color: var(--color-boton-hover);
+  transition: 1s;
 }

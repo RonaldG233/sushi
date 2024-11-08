@@ -36,7 +36,7 @@ body {
   --color-header-hover: #214365;
   --color-icono: #f4f4f4;
   --color-boton: #282f3f;
-  --color-boton-hover: #1f2633;
+  --color-boton-hover: #595e68;
 
   /* Tipografía */
   --tamaño-texto-titulo-grande: 5rem;
@@ -81,4 +81,136 @@ body {
   --posicion-imagen-circular-right: 160px;
   --posicion-imagen-circular-top: 180px;
   --tamano-imagen-circular: 500px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (width < 850px) {
+  /* menu */
+  .contenedor__menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-menu {
+    width: 400px;
+    max-width: none;
+
+    margin-bottom: 40px;
+  }
+  .menu {
+    height: 100vh;
+  }
+  .navegacion ul {
+    width: 500px;
+  }
+
+  .menu__img_circulo-izquierdo-inferior {
+    top: 1650px;
+  }
+  .menu__img_w-superior-izquierda {
+    left: 0;
+    top: 250px;
+  }
+  /* .seccion-principal {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+  } */
+
+
+
+  /* contenido principal */
+  .contenido-principal {
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  
+
+  
+
+  /* primera informacion */
+  .primera__informacion-contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .primera__informacion {
+    margin-left: 25%;
+    margin-top: 20px;
+  }
+
+  /* segunda informacion  */
+
+  .segunda__informacion-contenedor {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .segunda-informacion {
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  .segunda-informacion__imagen-circular {
+    margin-left: 20%;
+
+  }
+}
+
+@media (width < 990px){
+  
+  /* segunda informacion */
+
+  .segunda__informacion-contenedor {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .segunda-informacion {
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  .segunda-informacion__imagen-circular {
+    margin-left: 20%;
+
+  }
+
+}
+@media (width <1200px){
+
+  /* primera informacion */
+
+  .primera__informacion-contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  .primera__informacion {
+    margin-left: 25%;
+    margin-top: 20px;
+  }
+  
+  
+}
+
+@media (width <1300px){
+
+  /* menu Estadisticas */
+
+  .contenedor__estadisticas{
+    display: flex;
+    flex-direction: column;
+    height: 160vh;
+  }
+  
+}
+
+@media (width < 900px){
+  .header__menu{
+    display: none;
+  }
+
 }

@@ -45,15 +45,11 @@
   justify-content: space-between;
 }
 
-.primera__informacion-imagen {
-  width: 50%;
-}
+
 
 .primera__informacion-imagen-circular {
-  /* z-index: 1; */
-  position: relative;
-
   display: flex;
+  position: relative;
   margin-top: 170px;
   margin-left: 150px;
 }
@@ -94,5 +90,6 @@
 }
 
 .primera__informacion-boton:hover {
-  background-color: #1f2633;
+  background-color: #595e68;
+  transform: 1s;
 }
