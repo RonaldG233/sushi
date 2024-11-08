@@ -64,7 +64,7 @@
 }
 
 .segunda-informacion__imagen-circular {
-  position: relative;
+  /* position: relative; */
 
   display: flex;
   /* margin-top: 170px;
