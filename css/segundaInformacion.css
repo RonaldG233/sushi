@@ -1,10 +1,8 @@
 @import url(../css/estilos.css);
 
-/* SEGUNDA INFORMACION SUSHI */
-
-.segunda-informacion__sushi {
+/* Segunda Información Sushi */
+.segunda-informacion {
   min-height: max-content;
-
   height: 1000px;
   background-color: #ffd17e;
   color: #ffffff;
@@ -13,43 +11,45 @@
   position: relative;
 }
 
-.segunda-informacion__sushi-circulo-centro-inferior {
+/* Imágenes decorativas en segunda-informacion */
+.segunda-informacion__imagen--circulo-centro-inferior {
   position: absolute;
   bottom: 75px;
   right: 50%;
 }
 
-.segunda-informacion__sushi-w-superior-izquierda {
+.segunda-informacion__imagen--w-superior-izquierda {
   position: absolute;
   top: 180px;
   left: 340px;
 }
 
-.segunda-informacion__sushi-puntos-superior-centro {
+.segunda-informacion__imagen--puntos-superior-centro {
   position: absolute;
   top: 40px;
   right: 10px;
 }
 
-.segunda-informacion__sushi-circulo-derecha-superior {
+.segunda-informacion__imagen--circulo-derecha-superior {
   position: absolute;
   right: 170px;
   top: 140px;
 }
 
-.segunda-informacion__sushi-puntos-inferior-derecha {
+.segunda-informacion__imagen--puntos-inferior-derecha {
   position: absolute;
   bottom: 90px;
   right: 60px;
 }
 
-.segunda__informacion-contenedor {
+/* Contenedor de contenido */
+.segunda-informacion__contenedor {
   display: flex;
   justify-content: space-between;
   margin-top: 180px;
 }
 
-.segunda-informacion {
+.segunda-informacion__contenido {
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -59,18 +59,19 @@
   margin-left: 160px;
 }
 
-.segunda-informacion__imagen {
+/* Imagen circular */
+.segunda-informacion__imagen-circular {
   padding-right: 120px;
 }
 
-.segunda-informacion__imagen-circular {
-
+.segunda-informacion__imagen--circular {
   display: flex;
   position: relative;
   width: var(--tamano-imagen-circular);
   margin-right: 70px;
 }
 
+/* Título, descripción y botón */
 .segunda-informacion__titulo {
   font-size: 70px;
   font-weight: bold;
@@ -100,3 +101,4 @@
   background-color: var(--color-boton-hover);
   transition: 1s;
 }
+

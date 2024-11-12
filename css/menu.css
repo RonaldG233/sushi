@@ -11,35 +11,37 @@
   height: 1000px;
 }
 
-.menu__img_circulo-superior-derecho {
+.menu__imagen--circulo-superior-derecha {
   position: absolute;
   right: 0;
   top: 0px;
 }
 
-.menu__img_puntos-superior-izquierda {
+.menu__imagen--puntos-superior-izquierda {
   position: absolute;
   left: 440px;
   top: 20px;
 }
-.menu__img_w-superior-izquierda {
+
+.menu__imagen--w-superior-izquierda {
   position: absolute;
   left: 200px;
   top: 200px;
 }
-.menu__img_circulo-izquierdo-inferior {
+
+.menu__imagen--circulo-inferior-izquierda {
   position: absolute;
   left: 0;
   top: 700px;
 }
 
-.menu__img_puntos-medio-derecha {
+.menu__imagen--puntos-medio-derecha {
   position: absolute;
   right: 0;
   top: 400px;
 }
 
-.menu__img_w-inferior-derecha {
+.menu__imagen--w-inferior-derecha {
   position: absolute;
   right: 0;
   top: 870px;
@@ -56,26 +58,26 @@
   margin: 0 auto;
 }
 
-.contenedor__menu {
+.menu__contenedor {
   display: flex;
   justify-content: space-evenly;
   padding-top: 70px;
 }
 
-.item-menu {
+.menu__item {
   max-width: 20%;
 }
 
-.item__menu-imagenes {
+.menu__item--imagenes {
   width: 80%;
   border-radius: 10px;
 }
 
-.item__menu-titulo {
+.menu__item--titulo {
   margin-top: 10px;
   font-size: 42px;
 }
 
-.item__menu-texto {
+.menu__item--texto {
   font-size: 18px;
 }

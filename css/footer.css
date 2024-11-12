@@ -24,18 +24,18 @@
 }
 
 .footer__texto,
-.footer__link-texto {
+.footer__link--texto {
   font-size: var(--tamaño-texto-footer);
   width: 50%;
 }
 
-.footer__link-texto {
+.footer__link--texto {
   color: var(--color-texto-claro);
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer__link-texto:hover {
+.footer__link--texto:hover {
   color: var(--color-fondo-pedido4);
 }
 

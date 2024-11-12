@@ -1,8 +1,7 @@
 @import url(../css/estilos.css);
 
-/*primera informacion*/
-
-.primera__informacion-sushi {
+/* primera-informacion */
+.primera-informacion {
   min-height: max-content;
   height: 1000px;
   background-color: #ffd17e;
@@ -12,49 +11,48 @@
   position: relative;
 }
 
-.primera__informacion-sushi__puntos-superior-derecho {
+.primera-informacion__imagen--puntos-superior-derecha {
   position: absolute;
   right: 30px;
 }
 
-.primera__informacion-sushi__w-centro {
+.primera-informacion__imagen--w-centro {
   position: absolute;
   top: 140px;
   right: 750px;
 }
 
-.primera__informacion-sushi__circulo-inferior-derecho {
+.primera-informacion__imagen--circulo-inferior-derecha {
   position: absolute;
   right: 0px;
   top: 730px;
 }
 
-.primera__informacion-sushi__puntos-inferior-izquierda {
+.primera-informacion__imagen--puntos-inferior-izquierda {
   position: absolute;
   left: 30px;
   top: 760px;
 }
-.primera__informacion-sushi__circulo-izquierdo {
+
+.primera-informacion__imagen--circulo-izquierdo {
   position: absolute;
   left: 100px;
   top: 160px;
 }
 
-.primera__informacion-contenedor {
+.primera-informacion__contenedor {
   display: flex;
   justify-content: space-between;
 }
 
-
-
-.primera__informacion-imagen-circular {
+.primera-informacion__imagen--circular {
   display: flex;
   position: relative;
   margin-top: 170px;
   margin-left: 150px;
 }
 
-.primera__informacion {
+.primera-informacion__contenido {
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -63,19 +61,20 @@
   margin-right: 20%;
   margin-bottom: 60px;
 }
-.primera__informacion-titulo {
+
+.primera-informacion__titulo {
   font-size: 70px;
   font-weight: bold;
   color: #282f3f;
 }
 
-.primera__informacion-descripcion {
+.primera-informacion__descripcion {
   font-size: 34px;
   margin: 10px 0;
   color: #333;
 }
 
-.primera__informacion-boton {
+.primera-informacion__boton {
   width: 275px;
   margin-top: 35px;
   background-color: #282f3f;
@@ -85,11 +84,10 @@
   border-radius: 35px;
   cursor: pointer;
   font-size: 30px;
-
   transition: background-color 0.3s;
 }
 
-.primera__informacion-boton:hover {
+.primera-informacion__boton:hover {
   background-color: #595e68;
   transform: 1s;
 }

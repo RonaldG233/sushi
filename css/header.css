@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.header__logo-img {
+.header__logo--img {
   display: flex;
   height: var(--altura-logo);
   width: var(--ancho-logo);
@@ -50,7 +50,7 @@
 
 
 
-.header__search-icon {
+.header__search--icon {
   display: flex;
   justify-content: flex-end;
   align-items: center;

@@ -21,7 +21,7 @@
   border-radius: 15px;
 }
 
-.comentario-pedido__imagen-perfil {
+.comentario-pedido__imagen--perfil {
   width: 300px;
   height: 300px;
   margin-bottom: var(--espaciado-pequeño);

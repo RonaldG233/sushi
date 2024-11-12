@@ -1,7 +1,7 @@
 @import url(../css/estilos.css);
 
 /* Sección de estadísticas */
-.menu__estadisticas {
+.menu-estadisticas {
   height: 1000px;
   background-color: #21243d;
   padding: 40px 0;
@@ -10,47 +10,45 @@
   min-height: max-content;
 }
 
-/* imagenes de menu estadisticas */
-
-.menu__estadisticas__puntos-izquierda-superior {
+/* Imágenes de elementos en menu-estadisticas */
+.menu-estadisticas__imagen--puntos-izquierda-superior {
   position: absolute;
   left: 150px;
   top: 70px;
 }
 
-.menu__estadisticas__w-izquierda-superior {
+.menu-estadisticas__imagen--w-izquierda-superior {
   position: absolute;
   left: 160px;
   top: 250px;
 }
 
-.menu__estadisticas__circulo-derecha-superior {
+.menu-estadisticas__imagen--circulo-derecha-superior {
   position: absolute;
   right: 150px;
   top: 100px;
 }
 
-.menu__estadisticas__circulo-inferior-izquierda {
+.menu-estadisticas__imagen--circulo-inferior-izquierda {
   position: absolute;
   bottom: 0;
   left: 350px;
 }
 
-.menu__estadisticas__puntos-abajo-derecha {
+.menu-estadisticas__imagen--puntos-abajo-derecha {
   position: absolute;
   bottom: 80px;
   right: 650px;
 }
 
-.menu__estadisticas__w-derecha-inferior {
+.menu-estadisticas__imagen--w-derecha-inferior {
   position: absolute;
   bottom: 130px;
   right: 150px;
 }
 
-/* contenido de menu estadisticas */
-
-.menu__estadisticas-titulo {
+/* Contenido en menu-estadisticas */
+.menu-estadisticas__titulo {
   display: flex;
   padding-top: 30px;
   justify-content: center;
@@ -61,7 +59,7 @@
   color: #fff;
 }
 
-.menu__estadisticas-descripcion {
+.menu-estadisticas__descripcion {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,11 +70,11 @@
   margin: 0 auto;
 }
 
-.contenedor__estadisticas {
+/* Contenedor de estadísticas */
+.estadisticas__contenedor {
   display: flex;
   margin-top: 120px;
   justify-content: space-evenly;
-  
 }
 
 .estadistica {
@@ -86,13 +84,11 @@
 }
 
 .estadistica__circulo {
-  
   width: 400px;
   height: 400px;
   border: 5px solid #fff;
   border-radius: 50%;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -108,3 +104,4 @@
   font-size: 60px;
   color: #fff;
 }
+
