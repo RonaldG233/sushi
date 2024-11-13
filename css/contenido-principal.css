@@ -1,54 +1,55 @@
 @import url(../css/estilos.css);
 
 .contenido-principal__contenido {
-  max-width: 100%;
-  text-align: left;
-  padding: var(--espaciado-medio);
+  max-width: 100%; /* Ancho máximo al 100% del contenedor */
+  text-align: left; /* Alinea el texto a la izquierda */
+  padding: var(--espaciado-medio); /* Espaciado de 50px alrededor del contenido */
 }
 
 .contenido-principal__titulo {
-  display: flex;
-  font-size: 150px;
-  margin-bottom: var(--espaciado-pequeño);
-  font-weight: bold;
-  padding-top: 90px;
+  display: flex; /* Activa flexbox para el título */
+  font-size: 150px; /* Tamaño de fuente de 150px */
+  margin-bottom: var(--espaciado-pequeño); /* Margen inferior de 20px */
+  font-weight: bold; /* fuente en negrita */
+  padding-top: 90px; /* Espaciado de 90px en la parte superior */
 }
 
 .contenido-principal__texto {
-  font-size: 40px;
-  font-weight: 300;
-  margin-bottom: var(--espaciado-pequeño);
-  width: 50%;
+  font-size: 40px; /* Tamaño de fuente de 40px */
+  font-weight: 300; /* Grosor de fuente de 300 */
+  margin-bottom: var(--espaciado-pequeño); /* Margen inferior de 20px */
+  width: 50%; /* Ancho del texto al 50% del contenedor */
 }
 
 .contenido-principal__boton {
-  margin-top: var(--espaciado-medio);
-  padding: 25px 110px;
-  background-color: var(--color-acento);
-  color: var(--color-texto-claro);
-  border: none;
-  cursor: pointer;
-  font-size: 25px;
-  border-radius: var(--radio-borde-completo);
-  font-weight: 700;
-  text-align: center;
-  transition: 0.3s;
+  margin-top: var(--espaciado-medio); /* Margen superior de 50px */
+  padding: 25px 110px; /* Espaciado interno: 25px arriba/abajo, 110px a los lados */
+  background-color: var(--color-acento); /* Color de fondo #21243c */
+  color: var(--color-texto-claro); /* Color del texto blanco (#ffffff) */
+  border: none; /* Sin borde en el botón */
+  cursor: pointer; /* Cambia el cursor a puntero al pasar el mouse */
+  font-size: 25px; /* Tamaño de fuente de 25px */
+  border-radius: var(--radio-borde-completo); /* Bordes redondeados de 50px */
+  font-weight: 700; /* Peso de fuente en negrita */
+  text-align: center; /* Centra el texto en el botón */
+  transition: 0.3s; /* Suaviza la transición en hover */
 }
 
 .contenido-principal__boton:hover {
-  background-color: var(--color-acento-secundario);
+  background-color: var(--color-acento-secundario); /* Cambia el fondo a #3a3f5c al pasar el mouse */
 }
 
 .contenido-principal {
-  display: flex;
-  align-items: center;
-  height: 1000px;
-  justify-content: space-between;
-  background-image: url(../Elementos/Imagen_Fondo/Imagen_de_fondo.jpeg);
-  background-size: cover;
-  background-position: center;
-  padding: 0 50px;
-  color: var(--color-texto-claro);
-  overflow: hidden;
+  display: flex; /* Activa flexbox para alinear los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
+  height: 1000px; /* Altura total del contenedor de 1000px */
+  justify-content: space-between; /* Espacio equitativo entre los elementos */
+  background-image: url(../Elementos/Imagen_Fondo/Imagen_de_fondo.jpeg); /* Imagen de fondo */
+  background-size: cover; /* Escala la imagen para cubrir el contenedor */
+  background-position: center; /* Posiciona la imagen en el centro */
+  padding: 0 50px; /* Espaciado lateral de 50px */
+  color: var(--color-texto-claro); /* Color de texto blanco (#ffffff) */
+  overflow: hidden; /* Oculta el contenido que desborda los límites */
 }
+
 

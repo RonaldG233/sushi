@@ -1,66 +1,67 @@
 @import url(../css/estilos.css);
 
 .footer {
-  width: 100%;
-  height: auto;
-  background-color: var(--color-fondo-pie);
-  padding: 50px;
-  color: var(--color-texto-claro);
-  display: grid;
-  grid-template-columns: 40vw repeat(3, 1fr);
-  gap: var(--espaciado-redes);
+  width: 100%; /* Ocupa todo el ancho */
+  height: auto; /* Altura ajustable según contenido */
+  background-color: var(--color-fondo-pie); /* Color de fondo #111111 */
+  padding: 50px; /* Espaciado interno de 50px */
+  color: var(--color-texto-claro); /* Color de texto #ffffff */
+  display: grid; /* Activa grid para organización en cuadrícula */
+  grid-template-columns: 40vw repeat(3, 1fr); /* Estructura: 1 columna de 40vw + 3 columnas iguales */
+  gap: var(--espaciado-redes); /* Espacio entre elementos de 1rem */
 }
 
 .footer__informacion {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 0.6rem;
+  display: flex; /* Activa flexbox para alineación */
+  flex-direction: column; /* Alineación en columna */
+  width: 100%; /* Ocupa todo el ancho */
+  gap: 0.6rem; /* Espaciado entre elementos */
 }
 
 .footer__titulo {
-  font-size: var(--tamaño-texto-titulo-footer);
-  font-weight: var(--peso-texto-titulo-footer);
+  font-size: var(--tamaño-texto-titulo-footer); /* Tamaño de fuente 1.5vw */
+  font-weight: var(--peso-texto-titulo-footer); /* Grosor de fuente de 500 */
 }
 
 .footer__texto,
 .footer__link--texto {
-  font-size: var(--tamaño-texto-footer);
-  width: 50%;
+  font-size: var(--tamaño-texto-footer); /* Tamaño de texto 1vw */
+  width: 50%; /* Ocupa el 50% del ancho del contenedor */
 }
 
 .footer__link--texto {
-  color: var(--color-texto-claro);
-  text-decoration: none;
-  transition: color 0.3s;
+  color: var(--color-texto-claro); /* Color de texto #ffffff */
+  text-decoration: none; /* Sin subrayado */
+  transition: color 0.3s; /* Cambio de color suave en 0.3s */
 }
 
 .footer__link--texto:hover {
-  color: var(--color-fondo-pedido4);
+  color: var(--color-fondo-pedido4); /* Color de texto #ffd17d al hacer hover */
 }
 
 .footer__redes {
-  display: flex;
-  gap: var(--espaciado-redes);
-  margin-top: var(--margen-top-redes);
+  display: flex; /* Activa flexbox para los íconos */
+  gap: var(--espaciado-redes); /* Espacio entre íconos de 1rem */
+  margin-top: var(--margen-top-redes); /* Margen superior de 1.5rem */
 }
 
 .footer__link {
-  background-color: var(--color-principal);
-  width: var(--tamaño-icono-redes);
-  height: var(--tamaño-icono-redes);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s;
+  background-color: var(--color-principal); /* Fondo de ícono #333333 */
+  width: var(--tamaño-icono-redes); /* Ancho de ícono 40px */
+  height: var(--tamaño-icono-redes); /* Altura de ícono 40px */
+  border-radius: 50%; /* Bordes redondeados */
+  display: flex; /* Activa flexbox para centrar el ícono */
+  align-items: center; /* Centrado vertical del ícono */
+  justify-content: center; /* Centrado horizontal del ícono */
+  transition: opacity 0.3s; /* Transición de opacidad suave */
 }
 
 .footer__link:hover {
-  opacity: 0.5;
+  opacity: 0.5; /* Opacidad al 50% a los iconos */
 }
 
 .footer__social {
-  width: var(--tamaño-imagen-redes);
-  height: var(--tamaño-imagen-redes);
+  width: var(--tamaño-imagen-redes); /* Ancho de la imagen 25px */
+  height: var(--tamaño-imagen-redes); /* Altura de la imagen 25px */
 }
+

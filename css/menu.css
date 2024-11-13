@@ -1,83 +1,98 @@
 @import url(../css/estilos.css);
 
 /* Sección de menú popular */
+/* Estilo general para el contenedor principal del menú */
 .menu {
-  min-height: max-content;
-  background-color: #21243d;
-  color: #ffffff;
-  text-align: center;
-  padding: 40px 0;
-  position: relative;
-  height: 1000px;
+  min-height: max-content; /* Asegura que el contenedor ocupe el espacio mínimo necesario */
+  background-color: #21243d; /* Fondo oscuro para el menú */
+  color: #ffffff; /* Color del texto en blanco */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  padding: 40px 0; /* Espaciado arriba y abajo del contenedor */
+  position: relative; /* Posicionamiento relativo para los elementos dentro del menú que usan posición absoluta */
+  height: 1000px; /* Altura fija del menú */
 }
 
+/* Estilo para las imágenes dentro del contenedor principal del menú */
 .menu__imagen--circulo-superior-derecha {
-  position: absolute;
-  right: 0;
-  top: 0px;
+  position: absolute; /* Posicionamiento absoluto respecto al contenedor */
+  right: 0; /* Alineación a la derecha */
+  top: 0px; /* Alineación a la parte superior */
 }
 
+/* Estilo para las imágenes de puntos superior izquierda */
 .menu__imagen--puntos-superior-izquierda {
-  position: absolute;
-  left: 440px;
-  top: 20px;
+  position: absolute; /* Posicionamiento absoluto */
+  left: 440px; /* Alineación a la izquierda */
+  top: 20px; /* Alineación desde la parte superior */
 }
 
+/* Estilo para la imagen 'W' en la parte superior izquierda */
 .menu__imagen--w-superior-izquierda {
-  position: absolute;
-  left: 200px;
-  top: 200px;
+  position: absolute; /* Posicionamiento absoluto */
+  left: 200px; /* Alineación a la izquierda */
+  top: 200px; /* Alineación desde la parte superior */
 }
 
+/* Estilo para las imágenes del círculo inferior izquierdo */
 .menu__imagen--circulo-inferior-izquierda {
-  position: absolute;
-  left: 0;
-  top: 700px;
+  position: absolute; /* Posicionamiento absoluto */
+  left: 0; /* Alineación a la izquierda */
+  top: 700px; /* Alineación desde la parte inferior */
 }
 
+/* Estilo para la imagen de puntos medio derecha */
 .menu__imagen--puntos-medio-derecha {
-  position: absolute;
-  right: 0;
-  top: 400px;
+  position: absolute; /* Posicionamiento absoluto */
+  right: 0; /* Alineación a la derecha */
+  top: 400px; /* Alineación desde la parte superior */
 }
 
+/* Estilo para la imagen 'W' en la parte inferior derecha */
 .menu__imagen--w-inferior-derecha {
-  position: absolute;
-  right: 0;
-  top: 870px;
+  position: absolute; /* Posicionamiento absoluto */
+  right: 0; /* Alineación a la derecha */
+  top: 870px; /* Alineación desde la parte inferior */
 }
 
+/* Estilo para el título principal del menú */
 .menu__titulo {
-  padding-top: 30px;
-  font-size: 62px;
+  padding-top: 30px; /* Espaciado superior para el título */
+  font-size: 62px; /* Tamaño de la fuente del título */
 }
 
+/* Estilo para el texto descriptivo del menú */
 .menu__texto {
-  padding-top: 50px;
-  width: 660px;
-  margin: 0 auto;
+  padding-top: 50px; /* Espaciado superior */
+  width: 660px; /* Ancho del texto */
+  margin: 0 auto; /* Centrado automático del texto */
 }
 
+/* Estilo para el contenedor de los ítems del menú */
 .menu__contenedor {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 70px;
+  display: flex; /* Uso de flexbox para alinear los ítems en fila */
+  justify-content: space-evenly; /* Distribución uniforme de los ítems */
+  padding-top: 70px; /* Espaciado superior */
 }
 
+/* Estilo para cada ítem dentro del menú */
 .menu__item {
-  max-width: 20%;
+  max-width: 20%; /* Limita el ancho máximo de cada ítem a 20% */
 }
 
+/* Estilo para las imágenes dentro de los ítems del menú */
 .menu__item--imagenes {
-  width: 80%;
-  border-radius: 10px;
+  width: 80%; /* Establece el ancho de las imágenes al 80% del tamaño del ítem */
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
 }
 
+/* Estilo para los títulos dentro de los ítems del menú */
 .menu__item--titulo {
-  margin-top: 10px;
-  font-size: 42px;
+  margin-top: 10px; /* Espaciado superior entre la imagen y el título */
+  font-size: 42px; /* Tamaño de la fuente del título */
 }
 
+/* Estilo para los textos descriptivos dentro de los ítems del menú */
 .menu__item--texto {
-  font-size: 18px;
+  font-size: 18px; /* Tamaño de la fuente del texto */
 }
+

@@ -2,66 +2,44 @@
 
 /* Encabezado */
 .header {
-  display: flex;
-  width: 100%;
-  height: var(--altura-header);
-  align-items: center;
-  background-color: var(--color-header);
-  justify-content: space-around;
-}
-
-
-.header__logo {
-  display: flex;
-  padding-left: 8px;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.header__logo--img {
-  display: flex;
-  height: var(--altura-logo);
-  width: var(--ancho-logo);
-  padding-left: 10px; 
-  margin-left: var(--margen-logo);
+  display: flex; /* Activa flexbox para organizar los elementos del header */
+  width: 100%; /* Ocupa todo el ancho */
+  height: var(--altura-header); /* Altura de 90px */
+  align-items: center; /* Centra verticalmente los elementos */
+  background-color: var(--color-header); /* Color de fondo #21243d */
+  justify-content: space-around; /* Distribuye espacio equitativo entre elementos */
 }
 
 .header__navegacion {
-  display: flex;
+  display: flex; /* Activa flexbox para organizar el contenedor de navegación */
 }
 
 .header__menu {
-  list-style-type: none;
-  
-  gap: 80px;
-  display: flex;
-  align-content: space-between;
+  list-style-type: none; /* Elimina el estilo de lista */
+  gap: 80px; /* Espacio entre elementos de 80px */
+  display: flex; /* Activa flexbox para alinear horizontalmente los elementos del menú */
 }
 
-.header__menu li {
-  display: flex;
-  height: var(--alto-navegacion-li);
-  max-width: 300px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+.header__menu-item {
+  display: flex; /* Activa flexbox para centrar los enlaces */
+  height: var(--alto-navegacion-li); /* Altura de cada elemento 65px */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
 }
 
-
-
-.header__search--icon {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-size: var(--tamaño-icono);
-  color: var(--color-icono);
-  font-weight: 800;
-}
 
 .header__link {
-  
-  color: var(--color-texto-claro);
-  text-decoration: none;
-  font-size: var(--tamaño-texto-header);
+  color: var(--color-texto-claro); /* Color del texto #ffffff */
+  text-decoration: none; /* Sin subrayado */
+  font-size: var(--tamaño-texto-header); /* Tamaño de texto */
 }
+
+.header__search--icon {
+  display: flex; /* Activa flexbox para el icono de búsqueda */
+  justify-content: flex-end; /* Alinea el icono a la derecha del header */
+  align-items: center; /* Centra el icono verticalmente */
+  font-size: var(--tamaño-icono); /* Tamaño de icono */
+  color: var(--color-icono); /* Color del icono */
+  font-weight: 800; /* Fuente en negrita */
+}
+
