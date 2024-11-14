@@ -102,3 +102,95 @@
   transition: 1s;
 }
 
+/* Media queries para pantallas pequeñas */
+@media (max-width: 990px) {
+  .segunda-informacion__contenedor {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .segunda-informacion {
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+
+  .segunda-informacion__imagen-circular {
+    margin-left: 0;
+    width: 80%; /* Ajustar el tamaño de la imagen circular */
+    margin-bottom: 20px;
+  }
+
+  .segunda-informacion__contenido {
+    text-align: center; /* Centrar texto en pantallas pequeñas */
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%; /* Asegura que el contenido ocupe un 90% del ancho */
+  }
+
+  .segunda-informacion__titulo {
+    font-size: 50px; /* Reducir el tamaño del título */
+  }
+
+  .segunda-informacion__descripcion {
+    font-size: 28px; /* Reducir tamaño de la descripción */
+  }
+
+  .segunda-informacion__boton {
+    width: 80%; /* Ajustar tamaño del botón */
+  }
+
+  .segunda-informacion__imagen--circulo-centro-inferior,
+  .segunda-informacion__imagen--w-superior-izquierda,
+  .segunda-informacion__imagen--puntos-superior-centro,
+  .segunda-informacion__imagen--circulo-derecha-superior,
+  .segunda-informacion__imagen--puntos-inferior-derecha {
+    display: none; /* Ocultar imágenes decorativas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 850px) {
+  .segunda-informacion__contenedor {
+    flex-direction: column;
+  }
+
+  .segunda-informacion__contenido {
+    width: 90%; /* Asegurar que el contenido ocupe más espacio */
+  }
+}
+
+@media (max-width: 430px) {
+  .segunda-informacion__contenedor {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .segunda-informacion {
+    padding: 20px 0; /* Reducir padding para evitar desbordes */
+  }
+
+  .segunda-informacion__imagen-circular {
+    width: 60%; /* Reducir el tamaño de la imagen circular en pantallas pequeñas */
+    margin-bottom: 20px;
+    display: none; /* Ocultar la imagen circular en pantallas ultrapequeñas si es necesario */
+  }
+
+  .segunda-informacion__contenido {
+    margin: 0; /* Quitar márgenes */
+    width: 100%; /* Asegurar que el contenido ocupe el 100% del ancho */
+  }
+
+  .segunda-informacion__titulo {
+    font-size: 36px; /* Reducir el tamaño del título aún más */
+  }
+
+  .segunda-informacion__descripcion {
+    font-size: 24px; /* Reducir tamaño de la descripción */
+  }
+
+  .segunda-informacion__boton {
+    width: 100%; /* Hacer que el botón ocupe todo el ancho */
+  }
+}

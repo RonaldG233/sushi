@@ -83,33 +83,26 @@ body {
   --tamano-imagen-circular: 500px;
 }
 
-
 /* MEDIA QUERIES */
-
-
 
 /* header */
 
-@media (width < 900px){
-  .header__menu{
+@media (width < 900px) {
+  .header__menu {
     display: none;
   }
-
 }
 
- /* contenido principal */
- .contenido-principal {
+/* contenido principal */
+/* .contenido-principal {
   max-width: 100%;
   text-align: center;
   padding: 20px;
-}
-
-
-
+} */
 
 @media (width < 850px) {
   /* menu */
-  .menu__contenedor-imagenes-circulares {
+  /* .menu__contenedor-imagenes-circulares {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -137,12 +130,10 @@ body {
 
   .menu__contenedor--imagenes{
     display: none;
-  }
-  
-
+  } */
 
   /* primera informacion */
-  .primera-informacion__contenedor {
+  /* .primera-informacion__contenedor {
     display: flex;
     flex-direction: column;
   }
@@ -160,13 +151,11 @@ body {
     width: 40%;
     margin: 0 auto;
     
-  }
-
-
+  } */
 
   /* segunda informacion  */
 
-  .segunda__informacion-contenedor {
+  /* .segunda__informacion-contenedor {
     flex-direction: column;
     height: 100vh;
   }
@@ -178,48 +167,43 @@ body {
   .segunda-informacion__imagen-circular {
     margin-left: 20%;
 
-  }
+  } */
 
   /* menu Estadisticas */
 
-  .menu-estadisticas__titulo{
+  .menu-estadisticas__titulo {
     font-size: 40px;
     width: 400px;
     margin: 0 auto;
   }
-  .menu-estadisticas__descripcion{
+  .menu-estadisticas__descripcion {
     font-size: 16px;
     width: 400px;
     margin: 0 auto;
     padding-top: 10px;
-    
   }
 
-  .estadistica__circulo{
+  .estadistica__circulo {
     width: 200px;
     height: 200px;
-    
   }
 
-  .estadistica__numero{
+  .estadistica__numero {
     font-size: 40px;
   }
-  .estadistica__etiqueta{
+  .estadistica__etiqueta {
     font-size: 25px;
   }
 
-  .menu-estadisticas__imagenes{
+  .menu-estadisticas__imagenes {
     display: none;
   }
 }
 
-
-
-@media (width < 990px){
-  
+@media (width < 990px) {
   /* segunda informacion */
 
-  .segunda__informacion-contenedor {
+  /* .segunda__informacion-contenedor {
     flex-direction: column;
     height: 100vh;
   }
@@ -231,11 +215,9 @@ body {
   .segunda-informacion__imagen-circular {
     margin-left: 20%;
 
-  }
-
+  } */
 }
-@media (width <1200px){
-
+@media (width <1200px) {
   /* primera informacion */
 
   .primera-informacion__contenedor {
@@ -246,20 +228,14 @@ body {
     margin-left: 25%;
     margin-top: 20px;
   }
-  
-  
 }
 
-@media (width <1300px){
-
+@media (width <1300px) {
   /* menu Estadisticas */
 
-  .estadisticas__contenedor{
+  .estadisticas__contenedor {
     display: flex;
     flex-direction: column;
     height: 160vh;
   }
-  
 }
-
-

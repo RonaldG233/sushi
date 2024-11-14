@@ -9,7 +9,7 @@
   text-align: center; /* Centra el texto dentro del contenedor */
   padding: 40px 0; /* Espaciado arriba y abajo del contenedor */
   position: relative; /* Posicionamiento relativo para los elementos dentro del menú que usan posición absoluta */
-  height: 1000px; /* Altura fija del menú */
+  height: auto; /* Altura fija del menú */
 }
 
 /* Estilo para las imágenes dentro del contenedor principal del menú */
@@ -77,6 +77,7 @@
 /* Estilo para cada ítem dentro del menú */
 .menu__item {
   max-width: 20%; /* Limita el ancho máximo de cada ítem a 20% */
+  text-align: center;
 }
 
 /* Estilo para las imágenes dentro de los ítems del menú */
@@ -96,3 +97,41 @@
   font-size: 18px; /* Tamaño de la fuente del texto */
 }
 
+/* Contenedor de ítems */
+.menu__contenedor-imagenes-circulares {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 70px;
+}
+
+@media (max-width: 850px) {
+  .menu__contenedor-imagenes-circulares {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu__item {
+    width: 90%;
+    max-width: none;
+    margin-bottom: 40px;
+  }
+
+  .menu__contenedor {
+    padding: 20px 0;
+    height: auto;
+  }
+
+  .menu__contenedor--imagenes {
+    display: none;
+  }
+
+  .menu__contenedor--titulo {
+    font-size: 48px;
+  }
+
+  .menu__contenedor--texto {
+    width: 90%;
+    font-size: 16px;
+  }
+}

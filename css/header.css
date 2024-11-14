@@ -8,6 +8,7 @@
   align-items: center; /* Centra verticalmente los elementos */
   background-color: var(--color-header); /* Color de fondo #21243d */
   justify-content: space-around; /* Distribuye espacio equitativo entre elementos */
+  padding: 0 20px; /* Añade padding lateral para dispositivos pequeños */
 }
 
 .header__navegacion {
@@ -27,7 +28,6 @@
   justify-content: center; /* Centra el contenido horizontalmente */
 }
 
-
 .header__menu--link {
   color: var(--color-texto-claro); /* Color del texto #ffffff */
   text-decoration: none; /* Sin subrayado */
@@ -43,3 +43,81 @@
   font-weight: 800; /* Fuente en negrita */
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para el icono de menú hamburguesa */
+.header__hamburguesa {
+  display: none; /* Oculto por defecto */
+  font-size: 30px;
+  color: var(--color-icono);
+  cursor: pointer;
+}
+
+/* Media query para pantallas pequeñas (menos de 900px) */
+/* Oculta el checkbox */
+.header__checkbox {
+  display: none;
+}
+
+/* Icono de menú hamburguesa */
+.header__hamburguesa {
+  display: none; /* Oculto en pantallas grandes */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 2; /* Asegura que esté por encima del menú desplegable */
+}
+
+.header__hamburguesa span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-icono);
+}
+
+/* Media queries para dispositivos pequeños */
+@media (max-width: 900px) {
+  /* Oculta el menú normal y muestra el menú hamburguesa */
+  .header__menu {
+    display: none; /* Oculta el menú en dispositivos pequeños */
+  }
+
+  .header__hamburguesa {
+    display: flex;
+  }
+
+  /* Menú desplegable al activar el checkbox */
+  .header__checkbox:checked
+    + .header__hamburguesa
+    + .header__navegacion
+    .header__menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--altura-header);
+    left: 0;
+    width: 40%;
+    background-color: var(--color-header);
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .header__menu--item {
+    padding: 10px 20px;
+    text-align: left;
+  }
+}
+
+/* Media query específica para dispositivos aún más pequeños, como iPhone 14 Pro Max (430px) */
+@media (max-width: 430px) {
+  .header {
+    padding: 0 10px; /* Reduce aún más el padding lateral */
+  }
+
+  .header__logo img {
+    width: 100px; /* Ajusta el tamaño del logo */
+  }
+}

@@ -43,40 +43,45 @@
 .primera-informacion__contenedor {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 180px;
 }
 
-.primera-informacion__contenedor--imagen-circular {
+.primera-informacion__contenedor-imagen-circular {
   display: flex;
   position: relative;
-  margin-top: 170px;
+  margin-top: -80px;
   margin-left: 150px;
 }
 
-.primera-informacion__contenedor--contenido {
+.primera-informacion__contenedor-contenido {
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   width: 500px;
+  max-width: 700px;
   margin-right: 20%;
   margin-bottom: 60px;
 }
 
-.primera-informacion__contenedor--titulo {
+.primera-informacion__contenedor-titulo {
   font-size: 70px;
   font-weight: bold;
   color: #282f3f;
 }
 
-.primera-informacion__contenedor--descripcion {
+.primera-informacion__contenedor-descripcion {
   font-size: 34px;
   margin: 10px 0;
   color: #333;
+  line-height: 1.4;
 }
 
-.primera-informacion__contenedor--boton {
+.primera-informacion__contenedor-boton {
   width: 275px;
   margin-top: 35px;
+  margin-left: 80px;
   background-color: #282f3f;
   color: #fff;
   padding: 20px 30px;
@@ -87,7 +92,67 @@
   transition: background-color 0.3s;
 }
 
-.primera-informacion__contenedor--boton:hover {
+.primera-informacion__contenedor-boton:hover {
   background-color: #595e68;
   transform: 1s;
+}
+
+/* Media queries */
+@media (max-width: 850px) {
+  .primera-informacion__contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primera-informacion__contenedor-contenido {
+    text-align: center;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+  }
+
+  .primera-informacion__imagenes {
+    display: none;
+  }
+
+  .primera-informacion__contenedor-imagen-circular {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .primera-informacion__contenedor-titulo {
+    font-size: 50px;
+  }
+
+  .primera-informacion__contenedor-descripcion {
+    font-size: 28px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .primera-informacion__contenedor-boton {
+    font-size: 24px;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .primera-informacion {
+    padding: 20px 0;
+  }
+
+  .primera-informacion__contenedor-contenido {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .primera-informacion__contenedor-imagen-circular {
+    width: 60%;
+    margin: 0 auto 20px auto;
+  }
+
+  .primera-informacion__contenedor-descripcion {
+    font-size: 24px;
+    margin: 0 auto;
+  }
 }

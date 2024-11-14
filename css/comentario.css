@@ -39,3 +39,50 @@
   font-weight: 700; /* Grosor de fuente */
   color: var(--color-texto-claro); /* Color del texto en blanco */
 }
+
+/* Media query para pantallas pequeñas (ancho máximo de 990px) */
+@media (max-width: 990px) {
+  .comentario-pedido {
+    padding: 20px 0; /* Reducir padding superior e inferior */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+  }
+
+  .comentario-pedido__detalle {
+    max-width: 80%; /* Reducir el ancho del contenedor */
+    padding: 20px; /* Reducir padding interno */
+  }
+
+  .comentario-pedido__imagen--perfil {
+    width: 200px; /* Reducir el tamaño de la imagen de perfil */
+    height: 200px; /* Ajustar la altura de la imagen de perfil */
+  }
+
+  .comentario-pedido__texto {
+    font-size: 1.6rem; /* Reducir tamaño de fuente del texto */
+  }
+
+  .comentario-pedido__nombre {
+    font-size: 1.8rem; /* Reducir tamaño de fuente del nombre */
+  }
+}
+
+/* Media query específica para pantallas muy pequeñas como el iPhone 14 Pro Max (ancho máximo de 430px) */
+@media (max-width: 430px) {
+  .comentario-pedido__detalle {
+    max-width: 100%; /* Utilizar todo el ancho disponible */
+    padding: 15px; /* Reducir aún más el padding */
+  }
+
+  .comentario-pedido__imagen--perfil {
+    width: 150px; /* Reducir aún más el tamaño de la imagen */
+    height: 150px;
+  }
+
+  .comentario-pedido__texto {
+    font-size: 1.4rem; /* Ajustar tamaño de fuente del texto */
+  }
+
+  .comentario-pedido__nombre {
+    font-size: 1.6rem; /* Ajustar tamaño de fuente del nombre */
+  }
+}

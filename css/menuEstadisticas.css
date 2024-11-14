@@ -8,6 +8,7 @@
   text-align: center;
   position: relative;
   min-height: max-content;
+  width: 100%;
 }
 
 /* Imágenes de elementos en menu-estadisticas */
@@ -48,39 +49,46 @@
 }
 
 /* Contenido en menu-estadisticas */
+.menu-estadisticas__contenido {
+  width: 100%;
+  text-align: center;
+}
+
 .menu-estadisticas__titulo {
-  display: flex;
-  padding-top: 30px;
-  justify-content: center;
-  align-items: center;
   font-size: 70px;
   font-weight: bold;
-  margin-bottom: 10px;
   color: #fff;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .menu-estadisticas__descripcion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 800px;
   font-size: 34px;
   margin-bottom: 30px;
   color: #fff;
   margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
+  overflow: hidden;
 }
 
 /* Contenedor de estadísticas */
 .estadisticas__contenedor {
   display: flex;
-  margin-top: 120px;
   justify-content: space-evenly;
+  margin-top: 120px;
+  width: 100%;
 }
 
 .estadistica {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 33%;
 }
 
 .estadistica__circulo {
@@ -92,6 +100,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .estadistica__numero {
@@ -105,3 +114,69 @@
   color: #fff;
 }
 
+@media (max-width: 1300px) {
+  .estadisticas__contenedor {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+  }
+
+  .estadistica {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .menu-estadisticas__titulo {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .menu-estadisticas__descripcion {
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  .estadistica__circulo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .estadistica__numero {
+    font-size: 40px;
+  }
+
+  .estadistica__etiqueta {
+    font-size: 25px;
+  }
+
+  .menu-estadisticas__imagenes {
+    display: none; /* Ocultar imágenes en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-estadisticas__titulo {
+    font-size: 30px;
+  }
+
+  .menu-estadisticas__descripcion {
+    font-size: 14px;
+  }
+
+  .estadistica__circulo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .estadistica__numero {
+    font-size: 30px;
+  }
+
+  .estadistica__etiqueta {
+    font-size: 18px;
+  }
+}

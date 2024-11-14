@@ -3,7 +3,9 @@
 .contenido-principal__contenido {
   max-width: 100%; /* Ancho máximo al 100% del contenedor */
   text-align: left; /* Alinea el texto a la izquierda */
-  padding: var(--espaciado-medio); /* Espaciado de 50px alrededor del contenido */
+  padding: var(
+    --espaciado-medio
+  ); /* Espaciado de 50px alrededor del contenido */
 }
 
 .contenido-principal__contenido--titulo {
@@ -36,14 +38,16 @@
 }
 
 .contenido-principal__contenido--boton:hover {
-  background-color: var(--color-acento-secundario); /* Cambia el fondo a #3a3f5c al pasar el mouse */
+  background-color: var(
+    --color-acento-secundario
+  ); /* Cambia el fondo a #3a3f5c al pasar el mouse */
 }
 
 .contenido-principal {
   display: flex; /* Activa flexbox para alinear los elementos */
   align-items: center; /* Centra los elementos verticalmente */
   height: 1000px; /* Altura total del contenedor de 1000px */
-  justify-content: space-between; /* Espacio equitativo entre los elementos */
+  justify-content: center; /* Espacio equitativo entre los elementos */
   background-image: url(../Elementos/Imagen_Fondo/Imagen_de_fondo.jpeg); /* Imagen de fondo */
   background-size: cover; /* Escala la imagen para cubrir el contenedor */
   background-position: center; /* Posiciona la imagen en el centro */
@@ -52,4 +56,27 @@
   overflow: hidden; /* Oculta el contenido que desborda los límites */
 }
 
+/* Media query para pantallas más pequeñas */
+@media (max-width: 430px) {
+  .contenido-principal {
+    padding: 0 20px; /* Reducir el espaciado lateral */
+    height: auto; /* Ajustar altura automáticamente */
+  }
 
+  .contenido-principal__contenido--titulo {
+    font-size: 40px; /* Reducir tamaño de fuente para el título */
+    padding-top: 20px; /* Reducir el espaciado superior */
+    margin-bottom: 15px;
+  }
+
+  .contenido-principal__contenido--texto {
+    font-size: 18px; /* Reducir tamaño de fuente para el texto */
+    width: 100%; /* Texto ocupa todo el ancho del contenedor */
+  }
+
+  .contenido-principal__contenido--boton {
+    font-size: 18px;
+    padding: 15px 30px; /* Ajuste de padding para botones más pequeños */
+    margin-top: 20px;
+  }
+}
