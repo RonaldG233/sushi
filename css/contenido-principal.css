@@ -6,7 +6,7 @@
   padding: var(--espaciado-medio); /* Espaciado de 50px alrededor del contenido */
 }
 
-.contenido-principal__titulo {
+.contenido-principal__contenido--titulo {
   display: flex; /* Activa flexbox para el título */
   font-size: 150px; /* Tamaño de fuente de 150px */
   margin-bottom: var(--espaciado-pequeño); /* Margen inferior de 20px */
@@ -14,14 +14,14 @@
   padding-top: 90px; /* Espaciado de 90px en la parte superior */
 }
 
-.contenido-principal__texto {
+.contenido-principal__contenido--texto {
   font-size: 40px; /* Tamaño de fuente de 40px */
   font-weight: 300; /* Grosor de fuente de 300 */
   margin-bottom: var(--espaciado-pequeño); /* Margen inferior de 20px */
   width: 50%; /* Ancho del texto al 50% del contenedor */
 }
 
-.contenido-principal__boton {
+.contenido-principal__contenido--boton {
   margin-top: var(--espaciado-medio); /* Margen superior de 50px */
   padding: 25px 110px; /* Espaciado interno: 25px arriba/abajo, 110px a los lados */
   background-color: var(--color-acento); /* Color de fondo #21243c */
@@ -35,7 +35,7 @@
   transition: 0.3s; /* Suaviza la transición en hover */
 }
 
-.contenido-principal__boton:hover {
+.contenido-principal__contenido--boton:hover {
   background-color: var(--color-acento-secundario); /* Cambia el fondo a #3a3f5c al pasar el mouse */
 }
 

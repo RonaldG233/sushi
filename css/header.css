@@ -20,7 +20,7 @@
   display: flex; /* Activa flexbox para alinear horizontalmente los elementos del menú */
 }
 
-.header__menu-item {
+.header__menu--item {
   display: flex; /* Activa flexbox para centrar los enlaces */
   height: var(--alto-navegacion-li); /* Altura de cada elemento 65px */
   align-items: center; /* Centra el contenido verticalmente */
@@ -28,7 +28,7 @@
 }
 
 
-.header__link {
+.header__menu--link {
   color: var(--color-texto-claro); /* Color del texto #ffffff */
   text-decoration: none; /* Sin subrayado */
   font-size: var(--tamaño-texto-header); /* Tamaño de texto */
