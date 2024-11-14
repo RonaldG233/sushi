@@ -6,7 +6,7 @@
   background-size: cover; /* Cubre todo el fondo */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
-  color: var(--color-texto-claro); /* Color de texto blanco */
+  color: var(--color-texto-principal); /* Color de texto blanco */
   text-align: center; /* Centra el texto */
   padding: 40px 0; /* Espaciado arriba y abajo */
   display: flex; /* Habilita el uso de flexbox */

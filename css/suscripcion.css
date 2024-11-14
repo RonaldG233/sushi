@@ -3,138 +3,141 @@
 /* Parte4 */
 
 .suscripcion {
-  width: 100%;
-  height: 1000px;
-  background-color: var(--color-fondo-pedido4);
-  color: var(--color-principal);
-  text-align: center;
-  padding: 40px 0;
-  position: relative;
+  width: 100%; /* Ocupa el ancho completo */
+  height: 1000px; /* Altura fija de la sección */
+  background-color: var(  --color-fondo-melocotón-claro); /* Color de fondo para esta sección */
+  color: var(--color-principal); /* Color del texto principal */
+  text-align: center; /* Centra el contenido horizontalmente */
+  padding: 40px 0; /* Espaciado vertical de 40px */
+  position: relative; /* Necesario para las decoraciones posicionadas absolutamente */
 }
 
 .suscripcion__titulo {
-  font-size: var(--tamaño-texto-titulo-grande);
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: var(--tamaño-texto-titulo-grande); /* Tamaño de la fuente para el título */
+  font-weight: bold; /* Hace el título en negrita */
+  margin-bottom: 10px; /* Espaciado inferior del título */
+  color: var(--color-Principal);
 }
 
 .suscripcion__descripcion {
-  font-size: var(--tamaño-texto-descripcion);
-  max-width: 50%;
-  margin: 50px auto 80px auto;
-  color: #555;
+  font-size: var(--tamaño-texto-descripcion); /* Tamaño de la fuente para la descripción */
+  max-width: 50%; /* Limita el ancho máximo de la descripción */
+  margin: 50px auto 80px auto; /* Centra horizontalmente y añade márgenes verticales */
+  color: #555; /* Color gris para el texto */
 }
 
 .suscripcion__formulario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: var(--espaciado-pequeño);
+  display: flex; /* Define el contenedor como flex */
+  justify-content: center; /* Centra el formulario horizontalmente */
+  align-items: center; /* Alinea elementos verticalmente en el centro */
+  margin-top: var(--espaciado-pequeño); /* Espaciado superior definido en la variable */
 }
 
 .suscripcion__input {
-  padding: 15px 25px;
-  font-size: var(--tamaño-texto-parrafo);
-  border: none;
-  border-radius: var(--radio-borde-entrada);
-  outline: none;
-  width: 700px;
-  color: #bebebe;
-  box-sizing: border-box;
+  padding: 15px 25px; /* Relleno interno para el input */
+  font-size: var(--tamaño-texto-parrafo); /* Tamaño de la fuente en el input */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: var(--radio-borde-entrada); /* Bordes redondeados para el input */
+  outline: none; /* Elimina el borde de enfoque */
+  width: 700px; /* Ancho fijo para el input */
+  color: #bebebe; /* Color gris para el texto del input */
+  box-sizing: border-box; /* Incluye el relleno y borde en el ancho total */
 }
 
 .suscripcion__boton {
-  position: absolute;
-  padding: 15px 30px;
-  font-size: var(--tamaño-texto-parrafo);
-  border: none;
-  border-radius: var(--radio-borde-boton);
-  background-color: #22243e;
-  color: var(--color-texto-claro);
-  font-weight: bold;
-  cursor: pointer;
-  margin-left: 600px;
+  position: absolute; /* Posición absoluta dentro del contenedor */
+  padding: 15px 30px; /* Relleno para el botón */
+  font-size: var(--tamaño-texto-parrafo); /* Tamaño de la fuente en el botón */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: var(--radio-borde-boton); /* Bordes redondeados del botón */
+  background-color: var( --color-Principal); /* Color de fondo específico del botón */
+  color: var(--color-texto-principal); /* Color del texto en el botón */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cambia el cursor a mano en hover */
+  margin-left: 600px; /* Espaciado izquierdo para alinear el botón */
 }
 
 /* Decoraciones */
 .suscripcion__decoracion {
-  position: absolute;
+  position: absolute; /* Posiciona decoraciones de forma absoluta */
 }
 
 .suscripcion__decoracion--circulo-arriba-izq {
-  top: 5%;
-  right: 0;
-  width: 150px;
+  top: 5%; /* Posición superior relativa */
+  right: 0; /* Alinea la decoración al borde derecho */
+  width: 150px; /* Ancho de la imagen decorativa */
 }
 
 .suscripcion__decoracion--circulo-abajo-centro {
-  bottom: 15%;
-  left: 50%;
-  width: 200px;
+  bottom: 15%; /* Posición inferior relativa */
+  left: 50%; /* Centra horizontalmente */
+  width: 200px; /* Ancho de la imagen decorativa */
 }
 
 .suscripcion__decoracion--puntos-arriba-der {
-  top: 15%;
-  right: 85%;
-  width: 200px;
+  top: 15%; /* Posición superior relativa */
+  right: 85%; /* Posiciona cerca del borde izquierdo */
+  width: 200px; /* Ancho de la imagen decorativa */
 }
 
 .suscripcion__decoracion--puntos-abajo-der {
-  bottom: 20%;
-  right: 15%;
-  width: 100px;
+  bottom: 20%; /* Posición inferior relativa */
+  right: 15%; /* Posiciona cerca del borde derecho */
+  width: 100px; /* Ancho de la imagen decorativa */
 }
 
 .suscripcion__decoracion--onda-arriba-izq {
-  top: 18%;
-  left: 80%;
-  width: 100px;
+  top: 18%; /* Posición superior relativa */
+  left: 80%; /* Posiciona cerca del borde derecho */
+  width: 100px; /* Ancho de la imagen decorativa */
 }
 
 .suscripcion__decoracion--onda-abajo-izq {
-  bottom: 25%;
-  left: 20%;
-  width: 100px;
+  bottom: 25%; /* Posición inferior relativa */
+  left: 20%; /* Posiciona cerca del borde izquierdo */
+  width: 100px; /* Ancho de la imagen decorativa */
 }
 
-@media (max-width: 430px) {
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 814px) {
   .suscripcion {
-    padding: 20px;
+    padding: 20px; /* Reduce el espaciado en pantallas pequeñas */
   }
 
   .suscripcion__titulo {
-    font-size: 3em;
+    font-size: 3em; /* Reduce el tamaño del título */
   }
 
   .suscripcion__descripcion {
-    font-size: 1.5em;
-    max-width: 90%;
-    margin: 20px auto;
+    font-size: 1.5em; /* Reduce el tamaño de la descripción */
+    max-width: 90%; /* Aumenta el ancho máximo */
+    margin: 20px auto; /* Reduce márgenes en pantalla pequeña */
   }
 
   .suscripcion__formulario {
-    flex-direction: column;
+    flex-direction: column; /* Coloca input y botón en columna */
   }
 
   .suscripcion__input {
-    width: 100%;
-    max-width: 300px;
-    border-radius: var(--radio-borde-boton);
+    width: 100%; /* Ancho completo */
+    max-width: 300px; /* Limita el ancho máximo */
+    border-radius: var(--radio-borde-boton); /* Ajuste del radio del borde */
   }
 
   .suscripcion__boton {
-    position: relative;
-    margin: 15px 0 0 0;
-    width: auto;
+    position: relative; /* Cambia a relativa para pantalla pequeña */
+    margin: 15px 0 0 0; /* Ajusta el margen superior */
+    width: auto; /* Permite que el botón se adapte al ancho */
   }
 
-  /* Ocultar decoraciones no esenciales en pantallas pequeñas */
+  /* Ocultar decoraciones en pantallas pequeñas */
   .suscripcion__decoracion--circulo-arriba-izq,
   .suscripcion__decoracion--circulo-abajo-centro,
   .suscripcion__decoracion--puntos-arriba-der,
   .suscripcion__decoracion--puntos-abajo-der,
   .suscripcion__decoracion--onda-arriba-izq,
   .suscripcion__decoracion--onda-abajo-izq {
-    display: none;
+    display: none; /* Oculta las decoraciones no esenciales */
   }
 }
+

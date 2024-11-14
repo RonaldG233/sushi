@@ -2,157 +2,163 @@
 
 /* primera-informacion */
 .primera-informacion {
-  min-height: max-content;
-  height: 1000px;
-  background-color: #ffd17e;
-  color: #ffffff;
-  text-align: center;
-  padding: 40px 0;
-  position: relative;
+  min-height: max-content; /* Altura mínima para acomodar el contenido */
+  height: 1000px; /* Altura fija de la sección */
+  background-color: var(  --color-fondo-melocotón-claro); /* Fondo específico de la sección */
+  color: var(  --color-Principal); /* Color del texto en esta sección */
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 40px 0; /* Espaciado vertical de 40px */
+  position: relative; /* Necesario para posicionar imágenes decorativas absolutas */
 }
 
+/* Imágenes decorativas en primera-informacion */
 .primera-informacion__imagen--puntos-superior-derecha {
-  position: absolute;
-  right: 30px;
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+  right: 30px; /* Alinea la imagen a 30px del borde derecho */
 }
 
 .primera-informacion__imagen--w-centro {
-  position: absolute;
-  top: 140px;
-  right: 750px;
+  position: absolute; /* Posición absoluta en la sección */
+  top: 140px; /* Se ubica 140px desde la parte superior */
+  right: 750px; /* Se coloca 750px desde el borde derecho */
 }
 
 .primera-informacion__imagen--circulo-inferior-derecha {
-  position: absolute;
-  right: 0px;
-  top: 730px;
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+  right: 0px; /* Alinea la imagen al borde derecho */
+  top: 730px; /* Posiciona la imagen a 730px desde la parte superior */
 }
 
 .primera-informacion__imagen--puntos-inferior-izquierda {
-  position: absolute;
-  left: 30px;
-  top: 760px;
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+  left: 30px; /* Alinea la imagen a 30px del borde izquierdo */
+  top: 760px; /* Se coloca 760px desde la parte superior */
 }
 
 .primera-informacion__imagen--circulo-izquierdo {
-  position: absolute;
-  left: 100px;
-  top: 160px;
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+  left: 100px; /* Alinea la imagen a 100px del borde izquierdo */
+  top: 160px; /* Se coloca 160px desde la parte superior */
 }
 
+/* Contenedor principal */
 .primera-informacion__contenedor {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 180px;
+  display: flex; /* Define un contenedor flex */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Alinea elementos en el centro verticalmente */
+  margin-top: 180px; /* Espaciado superior de 180px */
 }
 
+/* Imagen circular en el contenedor */
 .primera-informacion__contenedor-imagen-circular {
-  display: flex;
-  position: relative;
-  margin-top: -80px;
-  margin-left: 150px;
+  display: flex; /* Define el contenedor como flex para la imagen */
+  position: relative; /* Permite posicionamiento relativo de la imagen */
+  margin-top: -80px; /* Espaciado superior negativo para ajustar posición */
+  margin-left: 150px; /* Espaciado izquierdo de 150px */
 }
 
+/* Contenido del contenedor */
 .primera-informacion__contenedor-contenido {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 500px;
-  max-width: 700px;
-  margin-right: 20%;
-  margin-bottom: 60px;
+  text-align: left; /* Alinea el texto a la izquierda */
+  display: flex; /* Define el contenedor como flex */
+  flex-direction: column; /* Orienta los elementos en una columna */
+  justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+  width: 500px; /* Ancho fijo del contenedor */
+  max-width: 700px; /* Ancho máximo de 700px */
+  margin-right: 20%; /* Espaciado derecho del 20% del ancho del contenedor */
+  margin-bottom: 60px; /* Espaciado inferior de 60px */
 }
 
+/* Título y descripción */
 .primera-informacion__contenedor-titulo {
-  font-size: 70px;
-  font-weight: bold;
-  color: #282f3f;
+  font-size: var(--tamaño-texto-titulo-mediano); /* Tamaño del título */
+  font-weight: bold; /* Hace el texto en negrita */
+  color: var(--color-Principal); /* Aplica color de acento al título */
 }
 
 .primera-informacion__contenedor-descripcion {
-  font-size: 34px;
-  margin: 10px 0;
-  color: #333;
-  line-height: 1.4;
+  font-size: var(--tamaño-texto-descripcion); /* Tamaño de la descripción */
+  margin: 10px 0; /* Margen de 10px en la parte superior e inferior */
+  color: var(--color-principal); /* Aplica el color principal al texto */
+  line-height: 1.4; /* Define la altura de línea para mejorar la legibilidad */
 }
 
+/* Botón */
 .primera-informacion__contenedor-boton {
-  width: 275px;
-  margin-top: 35px;
-  margin-left: 80px;
-  background-color: #282f3f;
-  color: #fff;
-  padding: 20px 30px;
-  border: none;
-  border-radius: 35px;
-  cursor: pointer;
-  font-size: 30px;
-  transition: background-color 0.3s;
+  width: 275px; /* Ancho del botón */
+  margin-top: 35px; /* Espaciado superior de 35px */
+  margin-left: 80px; /* Espaciado izquierdo de 80px */
+  background-color: var( --color-Principal); /* Color de fondo del botón */
+  color: var(--color-texto-principal); /* Color del texto en el botón */
+  padding: 20px 30px; /* Relleno de 20px vertical y 30px horizontal */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: var(--radio-borde-boton1); /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  font-size: var(--tamaño-texto-boton); /* Tamaño de texto en el botón */
+  transition: background-color 0.3s; /* Transición de color de fondo en hover */
 }
 
 .primera-informacion__contenedor-boton:hover {
-  background-color: #595e68;
-  transform: 1s;
+  background-color: var(  --color-hover-botones); /* Cambia el color en hover */
+  transform: 1s; /* Transición suave */
 }
 
-/* Media queries */
+/* Media queries para ajustar diseño en pantallas pequeñas */
 @media (max-width: 850px) {
   .primera-informacion__contenedor {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos en el contenedor */
   }
 
   .primera-informacion__contenedor-contenido {
-    text-align: center;
-    margin: 0 auto;
-    width: calc(100% - 20px);
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    width: calc(100% - 20px); /* Ajusta el ancho del contenedor */
   }
 
   .primera-informacion__imagenes {
-    display: none;
+    display: none; /* Oculta las imágenes decorativas */
   }
 
   .primera-informacion__contenedor-imagen-circular {
-    width: 40%;
-    margin: 0 auto;
+    width: 40%; /* Reduce el tamaño de la imagen circular */
+    margin: 0 auto; /* Centra la imagen circular */
   }
 
   .primera-informacion__contenedor-titulo {
-    font-size: 50px;
+    font-size: 50px; /* Reduce el tamaño del título */
   }
 
   .primera-informacion__contenedor-descripcion {
-    font-size: 28px;
-    width: 90%;
-    margin: 0 auto;
+    font-size: 28px; /* Reduce el tamaño de la descripción */
+    width: 90%; /* Aumenta el ancho de la descripción */
+    margin: 0 auto; /* Centra la descripción */
   }
 
   .primera-informacion__contenedor-boton {
-    font-size: 24px;
-    padding: 15px 20px;
+    font-size: 24px; /* Ajusta el tamaño del texto en el botón */
+    padding: 15px 20px; /* Reduce el relleno del botón */
   }
 }
 
 @media (max-width: 500px) {
   .primera-informacion {
-    padding: 20px 0;
+    padding: 20px 0; /* Reduce el espaciado vertical de la sección */
   }
 
   .primera-informacion__contenedor-contenido {
-    width: 100%;
-    margin: 0;
-    text-align: center;
+    width: 100%; /* Ocupa el ancho completo */
+    margin: 0; /* Quita el margen */
+    text-align: center; /* Centra el texto */
   }
 
   .primera-informacion__contenedor-imagen-circular {
-    width: 60%;
-    margin: 0 auto 20px auto;
+    width: 60%; /* Reduce aún más el tamaño de la imagen circular */
+    margin: 0 auto 20px auto; /* Centra y añade espaciado inferior */
   }
 
   .primera-informacion__contenedor-descripcion {
-    font-size: 24px;
-    margin: 0 auto;
+    font-size: 24px; /* Ajusta el tamaño de la descripción */
+    margin: 0 auto; /* Centra la descripción */
   }
 }

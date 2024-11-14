@@ -6,10 +6,10 @@
   width: 100%; /* Ocupa todo el ancho */
   height: var(--altura-header); /* Altura de 90px */
   align-items: center; /* Centra verticalmente los elementos */
-  background-color: var(--color-header); /* Color de fondo #21243d */
+  background-color: var( --color-Principal); /* Color de fondo #21243d */
   justify-content: space-around; /* Distribuye espacio equitativo entre elementos */
-  padding: 0 20px; /* Añade padding lateral para dispositivos pequeños */
 }
+
 
 .header__navegacion {
   display: flex; /* Activa flexbox para organizar el contenedor de navegación */
@@ -29,7 +29,7 @@
 }
 
 .header__menu--link {
-  color: var(--color-texto-claro); /* Color del texto #ffffff */
+  color: var(--color-texto-principal); /* Color del texto #ffffff */
   text-decoration: none; /* Sin subrayado */
   font-size: var(--tamaño-texto-header); /* Tamaño de texto */
 }
@@ -39,85 +39,26 @@
   justify-content: flex-end; /* Alinea el icono a la derecha del header */
   align-items: center; /* Centra el icono verticalmente */
   font-size: var(--tamaño-icono); /* Tamaño de icono */
-  color: var(--color-icono); /* Color del icono */
+  color: var(--color-texto-principal); /* Color del icono */
   font-weight: 800; /* Fuente en negrita */
 }
 
-.header__logo {
-  display: flex;
-  align-items: center;
-}
-
-/* Estilos para el icono de menú hamburguesa */
-.header__hamburguesa {
-  display: none; /* Oculto por defecto */
-  font-size: 30px;
-  color: var(--color-icono);
-  cursor: pointer;
-}
-
-/* Media query para pantallas pequeñas (menos de 900px) */
-/* Oculta el checkbox */
-.header__checkbox {
-  display: none;
-}
-
-/* Icono de menú hamburguesa */
-.header__hamburguesa {
-  display: none; /* Oculto en pantallas grandes */
-  cursor: pointer;
-  flex-direction: column;
-  gap: 4px;
-  z-index: 2; /* Asegura que esté por encima del menú desplegable */
-}
-
-.header__hamburguesa span {
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: var(--color-icono);
-}
-
-/* Media queries para dispositivos pequeños */
-@media (max-width: 900px) {
-  /* Oculta el menú normal y muestra el menú hamburguesa */
-  .header__menu {
-    display: none; /* Oculta el menú en dispositivos pequeños */
-  }
-
-  .header__hamburguesa {
-    display: flex;
-  }
-
-  /* Menú desplegable al activar el checkbox */
-  .header__checkbox:checked
-    + .header__hamburguesa
-    + .header__navegacion
-    .header__menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: var(--altura-header);
-    left: 0;
-    width: 40%;
-    background-color: var(--color-header);
-    padding: 10px 0;
-    gap: 10px;
-  }
-
-  .header__menu--item {
-    padding: 10px 20px;
-    text-align: left;
-  }
-}
-
-/* Media query específica para dispositivos aún más pequeños, como iPhone 14 Pro Max (430px) */
+/* Ajustes para pantallas pequeñas como el iPhone 14 Pro Max */
 @media (max-width: 430px) {
   .header {
-    padding: 0 10px; /* Reduce aún más el padding lateral */
+    padding: 0 10px; /* Asegura que el contenido del header tenga un pequeño margen interior */
+    justify-content: space-between; /* Ajusta los elementos para que no se desborden */
   }
 
-  .header__logo img {
-    width: 100px; /* Ajusta el tamaño del logo */
+  .header__menu {
+    gap: 20px; /* Reduce el espacio entre los elementos del menú */
+  }
+
+  .header__menu--link {
+    font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
+  }
+
+  .header__search--icon {
+    display: none; /* Oculta el icono de búsqueda en pantallas pequeñas para ganar espacio */
   }
 }

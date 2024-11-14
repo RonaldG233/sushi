@@ -4,8 +4,7 @@
   max-width: 100%; /* Ancho máximo al 100% del contenedor */
   text-align: left; /* Alinea el texto a la izquierda */
   padding: var(
-    --espaciado-medio
-  ); /* Espaciado de 50px alrededor del contenido */
+    --espaciado-medio); /* Espaciado de 50px alrededor del contenido */
 }
 
 .contenido-principal__contenido--titulo {
@@ -26,8 +25,8 @@
 .contenido-principal__contenido--boton {
   margin-top: var(--espaciado-medio); /* Margen superior de 50px */
   padding: 25px 110px; /* Espaciado interno: 25px arriba/abajo, 110px a los lados */
-  background-color: var(--color-acento); /* Color de fondo #21243c */
-  color: var(--color-texto-claro); /* Color del texto blanco (#ffffff) */
+  background-color: var( --color-Principal); /* Color de fondo #21243c */
+  color: var(--color-texto-principal); /* Color del texto blanco (#ffffff) */
   border: none; /* Sin borde en el botón */
   cursor: pointer; /* Cambia el cursor a puntero al pasar el mouse */
   font-size: 25px; /* Tamaño de fuente de 25px */
@@ -38,9 +37,7 @@
 }
 
 .contenido-principal__contenido--boton:hover {
-  background-color: var(
-    --color-acento-secundario
-  ); /* Cambia el fondo a #3a3f5c al pasar el mouse */
+  background-color: var(  --color-hover-botones); /* Cambia el fondo a #3a3f5c al pasar el mouse */
 }
 
 .contenido-principal {
@@ -52,7 +49,7 @@
   background-size: cover; /* Escala la imagen para cubrir el contenedor */
   background-position: center; /* Posiciona la imagen en el centro */
   padding: 0 50px; /* Espaciado lateral de 50px */
-  color: var(--color-texto-claro); /* Color de texto blanco (#ffffff) */
+  color: var(--color-texto-principal); /* Color de texto blanco (#ffffff) */
   overflow: hidden; /* Oculta el contenido que desborda los límites */
 }
 

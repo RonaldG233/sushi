@@ -25,18 +25,12 @@ body {
 
 :root {
   /* Colores */
-  --color-fondo-secundario: #f3f3f3;
-  --color-principal: #333333;
-  --color-acento: #21243c;
-  --color-acento-secundario: #3a3f5c;
-  --color-fondo-pedido4: #ffd17d;
-  --color-fondo-pie: #111111;
-  --color-texto-claro: #ffffff;
-  --color-header: #21243d;
-  --color-header-hover: #214365;
-  --color-icono: #f4f4f4;
-  --color-boton: #282f3f;
-  --color-boton-hover: #595e68;
+  --color-Principal: #21243d;
+  --color-texto-principal: #ffffff;
+  --color-fondo-melocotón-claro: #ffd17d;
+  --color-fondo-footer: #111111;
+  --color-hover-botones: #3a3f5c;
+
 
   /* Tipografía */
   --tamaño-texto-titulo-grande: 5rem;

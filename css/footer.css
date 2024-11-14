@@ -3,9 +3,9 @@
 .footer {
   width: 100%; /* Ocupa todo el ancho */
   height: auto; /* Altura ajustable según contenido */
-  background-color: var(--color-fondo-pie); /* Color de fondo #111111 */
+  background-color: var(--color-fondo-footer); /* Color de fondo #111111 */
   padding: 50px; /* Espaciado interno de 50px */
-  color: var(--color-texto-claro); /* Color de texto #ffffff */
+  color: var(--color-texto-principal);; /* Color de texto #ffffff */
   display: grid; /* Activa grid para organización en cuadrícula */
   grid-template-columns: 40vw repeat(3, 1fr); /* Estructura: 1 columna de 40vw + 3 columnas iguales */
   gap: var(--espaciado-redes); /* Espacio entre elementos de 1rem */

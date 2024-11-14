@@ -2,181 +2,216 @@
 
 /* Sección de estadísticas */
 .menu-estadisticas {
+  /* Altura fija de la sección de estadísticas */
   height: 1000px;
-  background-color: #21243d;
+  /* Color de fondo oscuro */
+  background-color: var( --color-Principal);
+  /* Espaciado superior e inferior */
   padding: 40px 0;
+  /* Centrado de texto */
   text-align: center;
+  /* Posicionamiento relativo para las imágenes decorativas */
   position: relative;
+  /* Altura mínima de acuerdo al contenido */
   min-height: max-content;
+  /* Ancho completo */
   width: 100%;
 }
 
-/* Imágenes de elementos en menu-estadisticas */
+/* Imagen: puntos en la esquina superior izquierda */
 .menu-estadisticas__imagen--puntos-izquierda-superior {
-  position: absolute;
-  left: 150px;
-  top: 70px;
+  position: absolute; /* Posicionamiento absoluto */
+  left: 150px; /* Espacio desde la izquierda */
+  top: 70px; /* Espacio desde arriba */
 }
 
+/* Imagen: letra W en la esquina izquierda superior */
 .menu-estadisticas__imagen--w-izquierda-superior {
-  position: absolute;
-  left: 160px;
-  top: 250px;
+  position: absolute; /* Posicionamiento absoluto */
+  left: 160px; /* Espacio desde la izquierda */
+  top: 250px; /* Espacio desde arriba */
 }
 
+/* Imagen: círculo en la esquina derecha superior */
 .menu-estadisticas__imagen--circulo-derecha-superior {
-  position: absolute;
-  right: 150px;
-  top: 100px;
+  position: absolute; /* Posicionamiento absoluto */
+  right: 150px; /* Espacio desde la derecha */
+  top: 100px; /* Espacio desde arriba */
 }
 
+/* Imagen: círculo en la esquina inferior izquierda */
 .menu-estadisticas__imagen--circulo-inferior-izquierda {
-  position: absolute;
-  bottom: 0;
-  left: 350px;
+  position: absolute; /* Posicionamiento absoluto */
+  bottom: 0; /* Alineado al borde inferior */
+  left: 350px; /* Espacio desde la izquierda */
 }
 
+/* Imagen: puntos en la esquina inferior derecha */
 .menu-estadisticas__imagen--puntos-abajo-derecha {
-  position: absolute;
-  bottom: 80px;
-  right: 650px;
+  position: absolute; /* Posicionamiento absoluto */
+  bottom: 80px; /* Espacio desde abajo */
+  right: 650px; /* Espacio desde la derecha */
 }
 
+/* Imagen: letra W en la esquina derecha inferior */
 .menu-estadisticas__imagen--w-derecha-inferior {
-  position: absolute;
-  bottom: 130px;
-  right: 150px;
+  position: absolute; /* Posicionamiento absoluto */
+  bottom: 130px; /* Espacio desde abajo */
+  right: 150px; /* Espacio desde la derecha */
 }
 
-/* Contenido en menu-estadisticas */
+/* Contenedor de contenido de estadísticas */
 .menu-estadisticas__contenido {
-  width: 100%;
-  text-align: center;
+  width: 100%; /* Ancho completo */
+  text-align: center; /* Centrado de texto */
 }
 
+/* Título de la sección de estadísticas */
 .menu-estadisticas__titulo {
-  font-size: 70px;
-  font-weight: bold;
-  color: #fff;
-  padding-top: 30px;
-  margin-bottom: 10px;
-  display: inline-block;
-  max-width: 100%;
-  overflow: hidden;
+  font-size: 70px; /* Tamaño de fuente grande */
+  font-weight: bold; /* Texto en negrita */
+  color: var(--color-texto-principal); /* Color blanco */
+  padding-top: 30px; /* Espacio superior */
+  margin-bottom: 10px; /* Espacio inferior */
+  display: inline-block; /* Elemento en línea con bloque */
+  max-width: 100%; /* Ancho máximo */
+  overflow: hidden; /* Ocultar contenido desbordado */
 }
 
+/* Descripción debajo del título */
 .menu-estadisticas__descripcion {
-  font-size: 34px;
-  margin-bottom: 30px;
-  color: #fff;
-  margin: 0 auto;
-  width: 800px;
-  max-width: 100%;
-  text-align: center;
-  overflow: hidden;
+  font-size: 34px; /* Tamaño de fuente grande */
+  margin-bottom: 30px; /* Espacio inferior */
+  color: var(--color-texto-principal); /* Color blanco */
+  margin: 0 auto; /* Centrado horizontal */
+  width: 800px; /* Ancho máximo */
+  max-width: 100%; /* Limitar ancho al 100% */
+  text-align: center; /* Centrado de texto */
+  overflow: hidden; /* Ocultar contenido desbordado */
 }
 
-/* Contenedor de estadísticas */
+/* Contenedor de las estadísticas individuales */
 .estadisticas__contenedor {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 120px;
-  width: 100%;
+  display: flex; /* Diseño flexible */
+  justify-content: space-evenly; /* Espaciado uniforme */
+  margin-top: 120px; /* Espacio superior */
+  width: 100%; /* Ancho completo */
 }
 
+/* Cada bloque de estadística */
 .estadistica {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33%;
+  display: flex; /* Diseño flexible */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  width: 33%; /* Ocupa un tercio del ancho */
 }
 
+/* Círculo alrededor de cada estadística */
 .estadistica__circulo {
-  width: 400px;
-  height: 400px;
-  border: 5px solid #fff;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  width: 400px; /* Ancho del círculo */
+  height: 400px; /* Altura del círculo */
+  border: 5px solid var(--color-texto-principal); /* Borde blanco */
+  border-radius: 50%; /* Borde circular */
+  display: flex; /* Diseño flexible */
+  flex-direction: column; /* Dirección de columna */
+  justify-content: center; /* Centrado vertical */
+  align-items: center; /* Centrado horizontal */
+  margin: 0 auto; /* Centrado automático */
 }
 
+/* Número dentro del círculo */
 .estadistica__numero {
-  font-size: 72px;
-  font-weight: bold;
-  color: #fff;
+  font-size: 72px; /* Tamaño de fuente grande */
+  font-weight: bold; /* Texto en negrita */
+  color: var(--color-texto-principal); /* Color blanco */
 }
 
+/* Etiqueta debajo del número */
 .estadistica__etiqueta {
-  font-size: 60px;
-  color: #fff;
+  font-size: 60px; /* Tamaño de fuente grande */
+  color: var(--color-texto-principal); /* Color blanco */
 }
 
+/* Media query para pantallas medianas */
 @media (max-width: 1300px) {
+  /* Cambia el contenedor de estadísticas a columna */
   .estadisticas__contenedor {
-    flex-direction: column;
-    height: auto;
-    justify-content: center;
+    flex-direction: column; /* Dirección de columna */
+    height: auto; /* Altura automática */
+    justify-content: center; /* Centrado vertical */
   }
 
+  /* Ajusta el ancho de cada estadística */
   .estadistica {
-    width: 100%;
-    margin-bottom: 30px;
+    width: 100%; /* Ancho completo */
+    margin-bottom: 30px; /* Espacio inferior */
   }
 }
 
+/* Media query para pantallas pequeñas */
 @media (max-width: 850px) {
+  /* Reduce el tamaño del título */
   .menu-estadisticas__titulo {
-    font-size: 40px;
-    width: 100%;
+    font-size: 40px; /* Tamaño de fuente reducido */
+    width: 100%; /* Ancho completo */
   }
 
+  /* Reduce el tamaño de la descripción */
   .menu-estadisticas__descripcion {
-    font-size: 16px;
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 10px;
+    font-size: 16px; /* Tamaño de fuente reducido */
+    width: 100%; /* Ancho completo */
+    margin: 0 auto; /* Centrado automático */
+    padding-top: 10px; /* Espacio superior */
   }
 
+  /* Reduce el tamaño del círculo */
   .estadistica__circulo {
-    width: 200px;
-    height: 200px;
+    width: 200px; /* Ancho reducido */
+    height: 200px; /* Altura reducida */
   }
 
+  /* Reduce el tamaño del número */
   .estadistica__numero {
-    font-size: 40px;
+    font-size: 40px; /* Tamaño de fuente reducido */
   }
 
+  /* Reduce el tamaño de la etiqueta */
   .estadistica__etiqueta {
-    font-size: 25px;
+    font-size: 25px; /* Tamaño de fuente reducido */
   }
 
+  /* Oculta las imágenes decorativas */
   .menu-estadisticas__imagenes {
-    display: none; /* Ocultar imágenes en pantallas pequeñas */
+    display: none; /* No mostrar en pantalla */
   }
 }
 
+/* Media query para pantallas extra pequeñas */
 @media (max-width: 500px) {
+  /* Ajusta el tamaño del título */
   .menu-estadisticas__titulo {
-    font-size: 30px;
+    font-size: 30px; /* Tamaño de fuente reducido */
   }
 
+  /* Ajusta el tamaño de la descripción */
   .menu-estadisticas__descripcion {
-    font-size: 14px;
+    font-size: 14px; /* Tamaño de fuente reducido */
   }
 
+  /* Reduce aún más el tamaño del círculo */
   .estadistica__circulo {
-    width: 150px;
-    height: 150px;
+    width: 150px; /* Ancho reducido */
+    height: 150px; /* Altura reducida */
   }
 
+  /* Ajusta el tamaño del número */
   .estadistica__numero {
-    font-size: 30px;
+    font-size: 30px; /* Tamaño de fuente reducido */
   }
 
+  /* Ajusta el tamaño de la etiqueta */
   .estadistica__etiqueta {
-    font-size: 18px;
+    font-size: 18px; /* Tamaño de fuente reducido */
   }
 }
+

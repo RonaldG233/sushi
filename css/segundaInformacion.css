@@ -2,142 +2,143 @@
 
 /* Segunda Información Sushi */
 .segunda-informacion {
-  min-height: max-content;
-  height: 1000px;
-  background-color: #ffd17e;
-  color: #ffffff;
-  text-align: center;
-  padding: 40px 0;
-  position: relative;
+  min-height: max-content; /* Ajusta la altura mínima al contenido */
+  height: 1000px; /* Altura fija para esta sección */
+  background-color: var(  --color-fondo-melocotón-claro); /* Fondo amarillo */
+  color: #ffffff; /* Color de texto blanco */
+  text-align: center; /* Centra el texto */
+  padding: 40px 0; /* Espaciado vertical de 40px arriba y abajo */
+  position: relative; /* Posiciona la sección relativa al viewport */
 }
 
-/* Imágenes decorativas en segunda-informacion */
+/* Estilos para cada imagen decorativa en posiciones específicas */
 .segunda-informacion__imagen--circulo-centro-inferior {
   position: absolute;
-  bottom: 75px;
-  right: 50%;
+  bottom: 75px; /* 75px desde el fondo */
+  right: 50%; /* Centrado horizontalmente */
 }
 
 .segunda-informacion__imagen--w-superior-izquierda {
   position: absolute;
-  top: 180px;
-  left: 340px;
+  top: 180px; /* 180px desde arriba */
+  left: 340px; /* 340px desde la izquierda */
 }
 
 .segunda-informacion__imagen--puntos-superior-centro {
   position: absolute;
-  top: 40px;
-  right: 10px;
+  top: 40px; /* 40px desde arriba */
+  right: 10px; /* 10px desde la derecha */
 }
 
 .segunda-informacion__imagen--circulo-derecha-superior {
   position: absolute;
-  right: 170px;
-  top: 140px;
+  right: 170px; /* 170px desde la derecha */
+  top: 140px; /* 140px desde arriba */
 }
 
 .segunda-informacion__imagen--puntos-inferior-derecha {
   position: absolute;
-  bottom: 90px;
-  right: 60px;
+  bottom: 90px; /* 90px desde el fondo */
+  right: 60px; /* 60px desde la derecha */
 }
 
-/* Contenedor de contenido */
+/* Contenedor principal que organiza el contenido */
 .segunda-informacion__contenedor {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 180px;
+  display: flex; /* Diseño en filas */
+  justify-content: space-between; /* Espacio entre elementos */
+  margin-top: 180px; /* Separación de 180px arriba */
 }
 
+/* Contenedor de texto y botón */
 .segunda-informacion__contenido {
-  text-align: left;
+  text-align: left; /* Alineación a la izquierda */
   display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  width: 700px;
-  margin-top: 80px;
-  margin-left: 160px;
+  flex-direction: column; /* Ordena elementos en columna */
+  justify-content: baseline; /* Alineación con respecto a la línea base */
+  width: 700px; /* Ancho fijo */
+  margin-top: 80px; /* Espacio superior */
+  margin-left: 160px; /* Separación desde la izquierda */
 }
 
-/* Imagen circular */
+/* Contenedor de imagen circular */
 .segunda-informacion__imagen-circular {
-  padding-right: 120px;
+  padding-right: 120px; /* Espacio a la derecha */
 }
 
 .segunda-informacion__imagen--circular {
   display: flex;
   position: relative;
-  width: var(--tamano-imagen-circular);
-  margin-right: 70px;
+  width: var(--tamano-imagen-circular); /* Tamaño de imagen */
+  margin-right: 70px; /* Espacio a la derecha */
 }
 
 /* Título, descripción y botón */
 .segunda-informacion__titulo {
-  font-size: 70px;
-  font-weight: bold;
-  color: #282f3f;
+  font-size: 70px; /* Tamaño de texto grande */
+  font-weight: bold; /* Negrita */
+  color: var( --color-Principal); /* Color gris oscuro */
 }
 
 .segunda-informacion__descripcion {
-  font-size: 34px;
-  margin: 10px 0;
-  color: #333;
+  font-size: 34px; /* Tamaño mediano */
+  margin: 10px 0; /* Separación vertical */
+  color: #333; /* Color de texto gris oscuro */
 }
 
 .segunda-informacion__boton {
-  width: 300px;
-  background-color: var(--color-boton);
-  color: var(--color-texto-claro);
-  padding: 20px 30px;
-  border: none;
-  border-radius: var(--radio-borde-boton);
-  cursor: pointer;
-  font-size: var(--tamaño-boton);
-  transition: background-color 0.3s;
-  margin-top: 50px;
+  width: 300px; /* Ancho fijo */
+  background-color: var( --color-Principal); /* Color de fondo */
+  color: var(--color-texto-principal); /* Color de texto blanco */
+  padding: 20px 30px; /* Relleno vertical de 20px y horizontal de 30px */
+  border: none; /* Sin borde */
+  border-radius: var(--radio-borde-boton); /* Bordes redondeados */
+  cursor: pointer; /* Cursor de puntero al pasar */
+  font-size: var(--tamaño-boton); /* Tamaño del texto */
+  transition: background-color 0.3s; /* Transición en color de fondo */
+  margin-top: 50px; /* Espacio superior */
 }
 
 .segunda-informacion__boton:hover {
-  background-color: var(--color-boton-hover);
-  transition: 1s;
+  background-color: var(  --color-hover-botones); /* Cambio de color al pasar */
+  transition: 1s; /* Transición de 1 segundo */
 }
 
 /* Media queries para pantallas pequeñas */
 @media (max-width: 990px) {
   .segunda-informacion__contenedor {
-    flex-direction: column;
-    height: auto;
-    align-items: center;
+    flex-direction: column; /* Cambia a diseño en columnas */
+    height: auto; /* Altura automática */
+    align-items: center; /* Centrado de elementos */
   }
 
   .segunda-informacion {
     justify-content: center;
-    margin-bottom: 45px;
+    margin-bottom: 45px; /* Espacio inferior */
   }
 
   .segunda-informacion__imagen-circular {
     margin-left: 0;
-    width: 80%; /* Ajustar el tamaño de la imagen circular */
-    margin-bottom: 20px;
+    width: 80%; /* Ajusta el tamaño de la imagen circular */
+    margin-bottom: 20px; /* Espacio inferior */
   }
 
   .segunda-informacion__contenido {
-    text-align: center; /* Centrar texto en pantallas pequeñas */
+    text-align: center; /* Centra el texto */
     margin-left: 0;
     margin-right: 0;
-    width: 90%; /* Asegura que el contenido ocupe un 90% del ancho */
+    width: 90%; /* Ocupa el 90% del ancho */
   }
 
   .segunda-informacion__titulo {
-    font-size: 50px; /* Reducir el tamaño del título */
+    font-size: 50px; /* Reduce el tamaño del título */
   }
 
   .segunda-informacion__descripcion {
-    font-size: 28px; /* Reducir tamaño de la descripción */
+    font-size: 28px; /* Reduce tamaño de la descripción */
   }
 
   .segunda-informacion__boton {
-    width: 80%; /* Ajustar tamaño del botón */
+    width: 80%; /* Ajusta el ancho del botón */
   }
 
   .segunda-informacion__imagen--circulo-centro-inferior,
@@ -145,7 +146,7 @@
   .segunda-informacion__imagen--puntos-superior-centro,
   .segunda-informacion__imagen--circulo-derecha-superior,
   .segunda-informacion__imagen--puntos-inferior-derecha {
-    display: none; /* Ocultar imágenes decorativas en pantallas pequeñas */
+    display: none; /* Oculta imágenes decorativas */
   }
 }
 
@@ -155,11 +156,11 @@
   }
 
   .segunda-informacion__contenido {
-    width: 90%; /* Asegurar que el contenido ocupe más espacio */
+    width: 90%; /* Aumenta el espacio del contenido */
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .segunda-informacion__contenedor {
     flex-direction: column;
     align-items: center;
@@ -168,29 +169,29 @@
   }
 
   .segunda-informacion {
-    padding: 20px 0; /* Reducir padding para evitar desbordes */
+    padding: 20px 0; /* Reduce padding vertical */
   }
 
   .segunda-informacion__imagen-circular {
-    width: 60%; /* Reducir el tamaño de la imagen circular en pantallas pequeñas */
+    width: 60%; /* Reduce tamaño de la imagen circular */
     margin-bottom: 20px;
-    display: none; /* Ocultar la imagen circular en pantallas ultrapequeñas si es necesario */
+    display: none; /* Oculta en pantallas ultrapequeñas */
   }
 
   .segunda-informacion__contenido {
-    margin: 0; /* Quitar márgenes */
-    width: 100%; /* Asegurar que el contenido ocupe el 100% del ancho */
+    margin: 0; /* Quita márgenes */
+    width: 100%; /* Ancho completo */
   }
 
   .segunda-informacion__titulo {
-    font-size: 36px; /* Reducir el tamaño del título aún más */
+    font-size: 36px; /* Tamaño más pequeño */
   }
 
   .segunda-informacion__descripcion {
-    font-size: 24px; /* Reducir tamaño de la descripción */
+    font-size: 24px; /* Tamaño reducido */
   }
 
   .segunda-informacion__boton {
-    width: 100%; /* Hacer que el botón ocupe todo el ancho */
+    width: 100%; /* Ocupa todo el ancho */
   }
 }

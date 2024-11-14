@@ -4,8 +4,8 @@
 /* Estilo general para el contenedor principal del menú */
 .menu__contenedor {
   min-height: max-content; /* Asegura que el contenedor ocupe el espacio mínimo necesario */
-  background-color: #21243d; /* Fondo oscuro para el menú */
-  color: #ffffff; /* Color del texto en blanco */
+  background-color: var( --color-Principal); /* Fondo oscuro para el menú */
+  color: var(--color-texto-principal); /* Color del texto en blanco */
   text-align: center; /* Centra el texto dentro del contenedor */
   padding: 40px 0; /* Espaciado arriba y abajo del contenedor */
   position: relative; /* Posicionamiento relativo para los elementos dentro del menú que usan posición absoluta */
@@ -99,39 +99,40 @@
 
 /* Contenedor de ítems */
 .menu__contenedor-imagenes-circulares {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 70px;
+  display: flex; /* Usa flexbox para organizar los elementos dentro del contenedor */
+  justify-content: space-evenly; /* Distribuye los elementos de forma equitativa a lo largo del contenedor */
+  padding-top: 70px; /* Añade espaciado superior para separar los elementos de la parte superior */
 }
 
-@media (max-width: 850px) {
+@media (max-width: 850px) { 
   .menu__contenedor-imagenes-circulares {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna (de fila a vertical) */
+    justify-content: center; /* Centra los elementos en el eje principal (vertical en este caso) */
+    align-items: center; /* Alinea los elementos al centro en el eje transversal */
   }
 
   .menu__item {
-    width: 90%;
-    max-width: none;
-    margin-bottom: 40px;
+    width: 90%; /* Define el ancho de los items al 90% del contenedor */
+    max-width: none; /* Elimina cualquier restricción de ancho máximo */
+    margin-bottom: 40px; /* Añade espacio inferior entre los elementos */
   }
 
   .menu__contenedor {
-    padding: 20px 0;
-    height: auto;
+    padding: 20px 0; /* Añade un relleno vertical de 20px al contenedor */
+    height: auto; /* Ajusta la altura al contenido */
   }
 
   .menu__contenedor--imagenes {
-    display: none;
+    display: none; /* Oculta el contenedor de imágenes en pantallas pequeñas */
   }
 
   .menu__contenedor--titulo {
-    font-size: 48px;
+    font-size: 48px; /* Reduce el tamaño del título para pantallas pequeñas */
   }
 
   .menu__contenedor--texto {
-    width: 90%;
-    font-size: 16px;
+    width: 90%; /* Define el ancho del texto al 90% del contenedor */
+    font-size: 16px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
   }
 }
+
