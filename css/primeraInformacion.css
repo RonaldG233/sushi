@@ -136,8 +136,10 @@
   }
 
   .primera-informacion__contenedor-boton {
-    font-size: 24px; /* Ajusta el tamaño del texto en el botón */
-    padding: 15px 20px; /* Reduce el relleno del botón */
+    font-size: 16px; /* Ajusta el tamaño del texto en el botón */
+    padding: 10px 15px; /* Reduce el relleno del botón */
+    margin: 0 auto;
+    
   }
 }
 

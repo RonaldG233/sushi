@@ -9,7 +9,7 @@
   text-align: center; /* Centra el texto dentro del contenedor */
   padding: 40px 0; /* Espaciado arriba y abajo del contenedor */
   position: relative; /* Posicionamiento relativo para los elementos dentro del menú que usan posición absoluta */
-  height: auto; /* Altura fija del menú */
+  height: 1000px; /* Altura fija del menú */
 }
 
 /* Estilo para las imágenes dentro del contenedor principal del menú */
