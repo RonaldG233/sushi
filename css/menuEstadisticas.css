@@ -2,6 +2,9 @@
 
 /* Sección de estadísticas */
 .menu-estadisticas {
+
+  /* Altura mínima de acuerdo al contenido */
+  min-height: max-content;
   /* Altura fija de la sección de estadísticas */
   height: 1000px;
   /* Color de fondo oscuro */
@@ -12,8 +15,6 @@
   text-align: center;
   /* Posicionamiento relativo para las imágenes decorativas */
   position: relative;
-  /* Altura mínima de acuerdo al contenido */
-  min-height: max-content;
   /* Ancho completo */
   width: 100%;
 }
@@ -94,7 +95,7 @@
 .estadisticas__contenedor {
   display: flex; /* Diseño flexible */
   justify-content: space-evenly; /* Espaciado uniforme */
-  margin-top: 120px; /* Espacio superior */
+  margin-top: 50px; /* Espacio superior */
   width: 100%; /* Ancho completo */
 }
 
@@ -134,6 +135,10 @@
 
 /* Media query para pantallas medianas */
 @media (max-width: 1300px) {
+
+  .menu-estadisticas{
+    height: 100vh;
+  }
   /* Cambia el contenedor de estadísticas a columna */
   .estadisticas__contenedor {
     flex-direction: column; /* Dirección de columna */
@@ -144,7 +149,7 @@
   /* Ajusta el ancho de cada estadística */
   .estadistica {
     width: 100%; /* Ancho completo */
-    margin-bottom: 30px; /* Espacio inferior */
+    margin-bottom: 20px; /* Espacio inferior */
   }
 }
 
