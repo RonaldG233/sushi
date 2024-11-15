@@ -221,3 +221,20 @@
     font-size: 20px;
   }
 }
+
+@media (max-width:700px){
+  .segunda-informacion__imagen-circular{
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .segunda-informacion__imagen--circular {
+    width: 100%; /* Reduce tamaño de la imagen circular */
+    margin-bottom: 20px;
+    margin: 0 auto;
+    
+    
+    
+  }
+}
