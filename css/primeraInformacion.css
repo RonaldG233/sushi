@@ -136,6 +136,7 @@
   }
 
   .primera-informacion__contenedor-boton {
+    width: 100%;
     font-size: 16px; /* Ajusta el tamaño del texto en el botón */
     padding: 10px 15px; /* Reduce el relleno del botón */
     margin: 0 auto;

@@ -62,7 +62,7 @@
 
 /* Contenedor de imagen circular */
 .segunda-informacion__imagen-circular {
-  padding-right: 120px; /* Espacio a la derecha */
+  padding-right: 80px; /* Espacio a la derecha */
 }
 
 .segunda-informacion__imagen--circular {
@@ -114,13 +114,22 @@
   .segunda-informacion {
     justify-content: center;
     /* margin-bottom: 45px; Espacio inferior */
-    height: 60vh;
+    height: 70vh;
   }
 
   .segunda-informacion__imagen-circular {
     margin-left: 0;
     width: 80%; /* Ajusta el tamaño de la imagen circular */
     margin-bottom: 20px; /* Espacio inferior */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 20% ;
+  }
+
+  .segunda-informacion__imagen--circular{
+    margin: 0 auto;
+   
   }
 
   .segunda-informacion__contenido {
@@ -193,6 +202,7 @@
   .segunda-informacion__contenido {
     margin: 0; /* Quita márgenes */
     width: 100%; /* Ancho completo */
+    margin-bottom: 25px;
   }
 
   .segunda-informacion__titulo {
@@ -201,11 +211,13 @@
 
   .segunda-informacion__descripcion {
     font-size: 24px; /* Tamaño reducido */
+    margin-bottom: 15px;
   }
 
   .segunda-informacion__boton {
-    width:50%; /* Ocupa todo el ancho */
+    width:100%; /* Ocupa todo el ancho */
     padding: 10px 15px;
     margin: 0 auto;
+    font-size: 20px;
   }
 }
