@@ -231,7 +231,7 @@
 
   .segunda-informacion__imagen--circular {
     width: 100%; /* Reduce tamaño de la imagen circular */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* le da margen a la parte inferior*/
     margin: 0 auto;
     
     
